@@ -7,10 +7,10 @@
         concurrency: 1
       context:
         users:
-          tenants: 2
-          users_per_tenant: 2
+          tenants: 1
+          users_per_tenant: 1
         images:
-          image_url: "CentOS-6"
+          image_url: "http://download.cirros-cloud.net/0.3.1/cirros-0.3.1-x86_64-disk.img"
           image_type: "qcow2"
           image_container: "bare"
-          images_per_tenant: 4
+          images_per_tenant: 1

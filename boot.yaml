@@ -1,0 +1,17 @@
+---
+  NovaServers.boot_server:
+    -
+      args:
+        profile:
+        flavor:
+            name: "m1.tiny"
+        image:
+            name: "cirros-0.3.2-x86_64-uec"
+      runner:
+        type: "constant"
+        times: 1
+        concurrency: 2
+      context:
+        users:
+          tenants: 1
+          users_per_tenant: 1
