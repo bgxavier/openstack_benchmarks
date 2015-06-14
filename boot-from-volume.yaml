@@ -1,16 +1,16 @@
 ---
-  NovaServers.boot_server:
+  NovaServers.boot_server_from_volume:
     -
       args:
-        profile:
         flavor:
             name: "m1.micro"
         image:
-            name: "ubuntu2"
+            name: "ubuntu"
+        volume_size: 4
       runner:
         type: "constant"
-        times: 1
-        concurrency: 1
+        times: 10
+        concurrency: 10
       context:
         users:
           tenants: 1

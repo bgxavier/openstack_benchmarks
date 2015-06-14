@@ -1,12 +1,8 @@
 ---
-  NovaServers.boot_server:
+  CinderVolumes.list_volumes:
     -
       args:
-        profile:
-        flavor:
-            name: "m1.micro"
-        image:
-            name: "ubuntu2"
+        detailed: True
       runner:
         type: "constant"
         times: 1
@@ -15,3 +11,6 @@
         users:
           tenants: 1
           users_per_tenant: 1
+        volumes:
+          size: 1
+          volumes_per_tenant: 4
