@@ -9,7 +9,7 @@
         volume_size: 4
       runner:
         type: "constant"
-        times: 10
+        times: 1
         concurrency: 1
       context:
         users:
