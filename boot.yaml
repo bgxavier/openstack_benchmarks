@@ -4,13 +4,13 @@
       args:
         profile:
         flavor:
-            name: "m1.micro"
+            name: "m1.micro2"
         image:
-            name: "ubuntu2"
+            name: "ubuntu"
       runner:
         type: "constant"
-        times: 1
-        concurrency: 1
+        times: 10
+        concurrency: 10
       context:
         users:
           tenants: 1
