@@ -1,0 +1,209 @@
+<!doctype html>
+<html ng-app="Application">
+
+  <head>
+    <script>
+        var OSProfilerData = {"info": {"started": 0, "finished": 22058, "name": "total"}, "children": [{"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 19725, "project": "nova", "started": 19130, "host": "0.0.0.0", "info.request:method": "POST", "info.request:query": "", "info.request:path": "/v2/59d6b5ac9a5a4ba9a04fdaf5055e5f06/servers"}, "parent_id": "5532ff81-a8c1-42a4-a1e0-fc918cfdbb6b", "trace_id": "d84e4766-66f1-4028-a693-8739933a71ca", "children": [{"info": {"info.function:name": "nova.compute.manager.ComputeManager.build_and_run_instance", "name": "rpc", "service": "nova-compute", "started": 0, "finished": 5, "info.function:args": "(<nova.compute.manager.ComputeManager object at 0x7fc7209d6e10>, <nova.context.RequestContext object at 0x7fc71f64fd50>, Instance(access_ip_v4=None,access_ip_v6=None,architecture=None,auto_disk_config=False,availability_zone=None,cell_name=None,cleaned=False,config_drive='',created_at=2015-07-02T04:51:35Z,default_ephemeral_device=None,default_swap_device=None,deleted=False,deleted_at=None,disable_terminate=False,display_description='rally_novaserver_WZBoPsn6v8VPrKUd',display_name='rally_novaserver_WZBoPsn6v8VPrKUd',ephemeral_gb=0,ephemeral_key_uuid=None,fault=<?>,flavor=Flavor(2),host=None,hostname='rally-novaserver-wzbopsn6v8vprkud',id=214,image_ref='6f193a9f-0dc9-4e5c-bfc7-afe1812cb788',info_cache=InstanceInfoCache,instance_type_id=2,kernel_id='',key_data=None,key_name=None,launch_index=0,launched_at=None,launched_on=None,locked=False,locked_by=None,memory_mb=512,metadata={},new_flavor=None,node=None,numa_topology=None,old_flavor=None,os_type=None,pci_devices=<?>,pci_requests=InstancePCIRequests,power_state=0,progress=0,project_id='59d6b5ac9a5a4ba9a04fdaf5055e5f06',ramdisk_id='',reservation_id='r-qqwwjabu',root_device_name=None,root_gb=1,scheduled_at=None,security_groups=SecurityGroupList,shutdown_terminate=False,system_metadata={image_base_image_ref='6f193a9f-0dc9-4e5c-bfc7-afe1812cb788',image_container_format='docker',image_disk_format='raw',image_min_disk='1',image_min_ram='0'},tags=<?>,task_state='scheduling',terminated_at=None,updated_at=None,user_data=None,user_id='3c2d495a1d00488e9c903c96fc6dfb1c',uuid=4af8c411-ec41-4b5e-9b6f-79986940e11c,vcpu_model=<?>,vcpus=1,vm_mode=None,vm_state='building'), {u'status': u'active', u'deleted': False, u'container_format': u'docker', u'min_ram': 0, u'updated_at': u'2015-07-02T04:14:06.000000', u'min_disk': 0, u'owner': u'd81eba5e45b94f39acaf5381ec365228', u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1081856, u'name': u'larsks/thttpd', u'checksum': u'557e89a4cfa157af1793dc976b028811', u'created_at': u'2015-07-02T04:14:04.000000', u'disk_format': u'raw', u'id': u'6f193a9f-0dc9-4e5c-bfc7-afe1812cb788'}, {u'instance_properties': {u'vm_state': u'building', u'pci_requests': {u'instance_uuid': u'4af8c411-ec41-4b5e-9b6f-79986940e11c', u'requests': []}, u'availability_zone': None, u'terminated_at': None, u'ephemeral_gb': 0, u'instance_type_id': 2, u'user_data': None, u'numa_topology': None, u'cleaned': False, u'vm_mode': None, u'deleted_at': None, u'reservation_id': u'r-qqwwjabu', u'id': 214, u'security_groups': [], u'disable_terminate': False, u'root_device_name': None, u'display_name': u'rally_novaserver_WZBoPsn6v8VPrKUd', u'uuid': u'4af8c411-ec41-4b5e-9b6f-79986940e11c', u'default_swap_device': None, u'info_cache': {u'instance_uuid': u'4af8c411-ec41-4b5e-9b6f-79986940e11c', u'deleted': False, u'network_info': [], u'created_at': u'2015-07-02T04:51:35.000000', u'deleted_at': None, u'updated_at': None}, u'hostname': u'rally-novaserver-wzbopsn6v8vprkud', u'launched_on': None, u'display_description': u'rally_novaserver_WZBoPsn6v8VPrKUd', u'key_data': None, u'deleted': False, u'config_drive': u'', u'power_state': 0, u'default_ephemeral_device': None, u'progress': 0, u'project_id': u'59d6b5ac9a5a4ba9a04fdaf5055e5f06', u'launched_at': None, u'scheduled_at': None, u'node': None, u'ramdisk_id': u'', u'access_ip_v6': None, u'access_ip_v4': None, u'kernel_id': u'', u'key_name': None, u'updated_at': None, u'host': None, u'root_gb': 1, u'user_id': u'3c2d495a1d00488e9c903c96fc6dfb1c', u'system_metadata': {u'image_min_disk': u'1', u'instance_type_memory_mb': 512, u'instance_type_swap': 0, u'instance_type_vcpu_weight': 0, u'instance_type_root_gb': 1, u'instance_type_id': 2, u'instance_type_name': u'm1.tiny', u'instance_type_ephemeral_gb': 0, u'instance_type_rxtx_factor': 1.0, u'instance_type_flavorid': u'1', u'instance_type_vcpus': 1, u'image_container_format': u'docker', u'image_min_ram': u'0', u'image_disk_format': u'raw', u'image_base_image_ref': u'6f193a9f-0dc9-4e5c-bfc7-afe1812cb788'}, u'task_state': u'scheduling', u'shutdown_terminate': False, u'cell_name': None, u'ephemeral_key_uuid': None, u'locked': False, u'name': u'instance-000000d6', u'created_at': u'2015-07-02T04:51:35.000000', u'locked_by': None, u'launch_index': 0, u'memory_mb': 512, u'vcpus': 1, u'image_ref': u'6f193a9f-0dc9-4e5c-bfc7-afe1812cb788', u'architecture': None, u'auto_disk_config': False, u'os_type': None, u'metadata': {}}, u'instance_type': {u'deleted': False, u'ephemeral_gb': 0, u'updated_at': None, u'disabled': False, u'extra_specs': {}, u'rxtx_factor': 1.0, u'is_public': True, u'flavorid': u'1', u'id': 2, u'root_gb': 1, u'deleted_at': None, u'name': u'm1.tiny', u'created_at': None, u'memory_mb': 512, u'vcpus': 1, u'swap': 0, u'vcpu_weight': 0}, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'docker', u'min_ram': 0, u'updated_at': u'2015-07-02T04:14:06.000000', u'owner': u'd81eba5e45b94f39acaf5381ec365228', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1081856, u'name': u'larsks/thttpd', u'checksum': u'557e89a4cfa157af1793dc976b028811', u'created_at': u'2015-07-02T04:14:04.000000', u'disk_format': u'raw', u'id': u'6f193a9f-0dc9-4e5c-bfc7-afe1812cb788'}, u'num_instances': 1}, {u'instance_type': Flavor(created_at=None,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='1',id=2,is_public=True,memory_mb=512,name='m1.tiny',projects=<?>,root_gb=1,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'retry': {u'num_attempts': 1, u'hosts': [[u'compute', u'compute']]}, u'limits': {u'memory_mb': 193342.5}, u'scheduler_hints': {}})", "project": "nova", "host": "compute", "info.function:kwargs": "{'node': u'compute', 'requested_networks': None, 'limits': {u'memory_mb': 193342.5}, 'block_device_mapping': BlockDeviceMappingList(objects=[BlockDeviceMapping(214)]), 'admin_password': u'W2LhX249P5UA', 'injected_files': [], 'security_groups': [u'default']}"}, "parent_id": "d84e4766-66f1-4028-a693-8739933a71ca", "trace_id": "6a38593f-d79b-4f17-a25f-ab0455946937", "children": []}, {"info": {"name": "wsgi", "service": "api", "info.request:host_url": "http://10.32.45.201:9292", "info.request:scheme": "http", "finished": 19381, "project": "glance", "started": 19227, "host": "0.0.0.0", "info.request:method": "HEAD", "info.request:query": "", "info.request:path": "/v1/images/6f193a9f-0dc9-4e5c-bfc7-afe1812cb788"}, "parent_id": "d84e4766-66f1-4028-a693-8739933a71ca", "trace_id": "4c698c29-77c9-4ec1-8eba-abab9f4878f4", "children": [{"info": {"name": "wsgi", "service": "registry", "info.request:host_url": "http://0.0.0.0:9191", "info.request:scheme": "http", "finished": 19375, "project": "glance", "started": 19298, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/images/6f193a9f-0dc9-4e5c-bfc7-afe1812cb788"}, "parent_id": "4c698c29-77c9-4ec1-8eba-abab9f4878f4", "trace_id": "cc8a964f-1c7d-41a8-8a00-285dfbe7b167", "children": []}]}, {"info": {"info.function:name": "oslo_messaging.rpc.server.SchedulerManager.inner", "name": "rpc", "service": "nova-scheduler", "started": 19743, "finished": 19763, "info.function:args": "(<nova.scheduler.manager.SchedulerManager object at 0x7f04c3ebd410>, <nova.context.RequestContext object at 0x7f04c24926d0>)", "project": "nova", "host": "controller", "info.function:kwargs": "{u'request_spec': {u'instance_properties': {u'vm_state': u'building', u'pci_requests': {u'instance_uuid': u'4af8c411-ec41-4b5e-9b6f-79986940e11c', u'requests': []}, u'availability_zone': None, u'terminated_at': None, u'ephemeral_gb': 0, u'instance_type_id': 2, u'user_data': None, u'numa_topology': None, u'cleaned': False, u'vm_mode': None, u'deleted_at': None, u'reservation_id': u'r-qqwwjabu', u'id': 214, u'security_groups': [], u'disable_terminate': False, u'root_device_name': None, u'display_name': u'rally_novaserver_WZBoPsn6v8VPrKUd', u'uuid': u'4af8c411-ec41-4b5e-9b6f-79986940e11c', u'default_swap_device': None, u'info_cache': {u'instance_uuid': u'4af8c411-ec41-4b5e-9b6f-79986940e11c', u'deleted': False, u'network_info': [], u'created_at': u'2015-07-02T04:51:35.000000', u'deleted_at': None, u'updated_at': None}, u'hostname': u'rally-novaserver-wzbopsn6v8vprkud', u'launched_on': None, u'display_description': u'rally_novaserver_WZBoPsn6v8VPrKUd', u'key_data': None, u'deleted': False, u'config_drive': u'', u'power_state': 0, u'default_ephemeral_device': None, u'progress': 0, u'project_id': u'59d6b5ac9a5a4ba9a04fdaf5055e5f06', u'launched_at': None, u'scheduled_at': None, u'node': None, u'ramdisk_id': u'', u'access_ip_v6': None, u'access_ip_v4': None, u'kernel_id': u'', u'key_name': None, u'updated_at': None, u'host': None, u'root_gb': 1, u'user_id': u'3c2d495a1d00488e9c903c96fc6dfb1c', u'system_metadata': {u'image_min_disk': u'1', u'instance_type_memory_mb': 512, u'instance_type_swap': 0, u'instance_type_vcpu_weight': 0, u'instance_type_root_gb': 1, u'instance_type_id': 2, u'instance_type_name': u'm1.tiny', u'instance_type_ephemeral_gb': 0, u'instance_type_rxtx_factor': 1.0, u'instance_type_flavorid': u'1', u'instance_type_vcpus': 1, u'image_container_format': u'docker', u'image_min_ram': u'0', u'image_disk_format': u'raw', u'image_base_image_ref': u'6f193a9f-0dc9-4e5c-bfc7-afe1812cb788'}, u'task_state': u'scheduling', u'shutdown_terminate': False, u'cell_name': None, u'ephemeral_key_uuid': None, u'locked': False, u'name': u'instance-000000d6', u'created_at': u'2015-07-02T04:51:35.000000', u'locked_by': None, u'launch_index': 0, u'memory_mb': 512, u'vcpus': 1, u'image_ref': u'6f193a9f-0dc9-4e5c-bfc7-afe1812cb788', u'architecture': None, u'auto_disk_config': False, u'os_type': None, u'metadata': {}}, u'instance_type': {u'deleted': False, u'ephemeral_gb': 0, u'updated_at': None, u'disabled': False, u'extra_specs': {}, u'rxtx_factor': 1.0, u'is_public': True, u'flavorid': u'1', u'id': 2, u'root_gb': 1, u'deleted_at': None, u'name': u'm1.tiny', u'created_at': None, u'memory_mb': 512, u'vcpus': 1, u'swap': 0, u'vcpu_weight': 0}, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'docker', u'min_ram': 0, u'updated_at': u'2015-07-02T04:14:06.000000', u'owner': u'd81eba5e45b94f39acaf5381ec365228', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1081856, u'name': u'larsks/thttpd', u'checksum': u'557e89a4cfa157af1793dc976b028811', u'created_at': u'2015-07-02T04:14:04.000000', u'disk_format': u'raw', u'id': u'6f193a9f-0dc9-4e5c-bfc7-afe1812cb788'}, u'num_instances': 1}, u'filter_properties': {u'instance_type': Flavor(created_at=None,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='1',id=2,is_public=True,memory_mb=512,name='m1.tiny',projects=<?>,root_gb=1,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'retry': {u'num_attempts': 1, u'hosts': []}, u'scheduler_hints': {}}}"}, "parent_id": "d84e4766-66f1-4028-a693-8739933a71ca", "trace_id": "bd3b7e89-e60e-4f0f-9497-c9ae781567d2", "children": []}]}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 20900, "project": "nova", "started": 20738, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/59d6b5ac9a5a4ba9a04fdaf5055e5f06/servers/4af8c411-ec41-4b5e-9b6f-79986940e11c"}, "parent_id": "5532ff81-a8c1-42a4-a1e0-fc918cfdbb6b", "trace_id": "25cd593a-c7b1-4112-9dc1-44985809fc7d", "children": []}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 22058, "project": "nova", "started": 21912, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/59d6b5ac9a5a4ba9a04fdaf5055e5f06/servers/4af8c411-ec41-4b5e-9b6f-79986940e11c"}, "parent_id": "5532ff81-a8c1-42a4-a1e0-fc918cfdbb6b", "trace_id": "8212d2f4-75e6-46ee-a70b-f0d653d89097", "children": []}]}
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+
+    <style>
+
+      .trace {
+        min-width: 900px;
+        width: 100%;
+      }
+
+      .trace tr.active-true {
+        background-color: #D9EDF7!important;
+      }
+
+      .trace tr td {
+        width: 14%;
+        white-space: nowrap;
+        padding: 2px;
+        border-right: 1px solid #eee;
+
+      }
+      .trace tr td.details {
+        width: 10%;
+        padding-right: 20px;
+      }
+      .trace.cursor_pointer_on_hover {
+        cursor: pointer;
+      }
+      .trace .level {
+        width: 10%;
+        font-weight: bold;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .duration {
+        width: 25px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #c6eff3;
+        border-radius: 4px;
+        font-size: 10px;
+
+      }
+
+      .duration div{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/ng-template"  id="tree_item_renderer.html">
+
+        <div ng-init="hide_children=false">
+          <table class="trace cursor_pointer_on_hover">
+            <tr class="active-{{hover}}" ng-init="hover=false" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
+              <td class="level" style="padding-left:{{data.level * 5}}px;">
+                <button type="button" class="btn btn-default btn-xs" ng-disabled="data.is_leaf" ng-click="hide_children=!hide_children">
+                  <span class="glyphicon glyphicon-{{ (data.is_leaf) ? 'cloud' : ((hide_children) ? 'plus': 'minus')}}"></span>
+                  {{data.level || 0}}
+                </button>
+              </td>
+              <td ng-click="display(data);" class="text-center">
+               <div class="duration" style="width: {{get_width(data)}}%; margin-left: {{get_started(data)}}%">
+                  <div>{{data.info.finished - data.info.started}} ms</div>
+                </div>
+              </td>
+              <td ng-click="display(data);" class="{{ is_important(data) ? 'bold' : ''}} text-right" > {{data.info.name}} </td>
+              <td ng-click="display(data);"> {{data.info.project  || "n/a"}}</td>
+              <td ng-click="display(data);"> {{data.info.service  || "n/a" }} </td>
+              <td ng-click="display(data);"> {{data.info.host || "n/a"}} </td>
+              <td class="details">
+                <a href="#" ng-click="display(data);"> Details </a>
+              </td>
+            </tr>
+          </table>
+
+
+        <div ng-hide="hide_children">
+          <div ng-repeat="data in data.children" ng-include="'tree_item_renderer.html'"> </div>
+        </div>
+      </div>
+
+
+    </script>
+
+    <script>
+      angular.module("Application", ['ui.bootstrap']);
+
+      function ProfilerCtlr($scope, $modal) {
+
+        var convert_input = function(input, level){
+          level = (level) ? level : 0;
+          input.level = level;
+          input.is_leaf = !input.children.length
+
+          for (var i=0; i < input.children.length; i++)
+            convert_input(input.children[i], level + 1);
+          return input;
+        }
+
+        $scope.get_width = function(data){
+
+          var full_duration = $scope.tree[0].info.finished;
+          var duration = (data.info.finished - data.info.started) * 100.0 / full_duration;
+          return (duration >= 0.5) ? duration : 0.5;
+        }
+
+        $scope.get_started = function(data) {
+          var full_duration = $scope.tree[0].info.finished;
+          return data.info.started * 100.0 / full_duration;
+        }
+
+        $scope.is_important = function(data) {
+          return ["total", "wsgi", "rpc"].indexOf(data.info.name) != -1;
+        }
+
+        $scope.display = function(data){
+          var info = angular.copy(data.info);
+
+          var metadata = {};
+          angular.forEach(info, function(value, key) {
+            var parts = key.split(".");
+            if (parts[0] == "info"){
+
+              if (parts.length != 2){
+                this[key] = value;
+              }
+              else{
+                var group_name = parts[1].split(":");
+                if (group_name.length == 2){
+                  if (!(group_name[0] in this))
+                    this[group_name[0]] = {};
+
+                  this[group_name[0]][group_name[1]] = value;
+                }
+              }
+            };
+          }, metadata);
+
+          info["metadata"] = "<pre>" + JSON.stringify(metadata, "", 4) + "</pre>"
+
+          var trace_data = "<div class='row'>"
+          columns = ["name", "project", "service", "host", "started",
+                     "finished", "host", "metadata"];
+          for (var i = 0; i < columns.length; i++){
+            trace_data += "<div class='col-md-2 text-right text-capitalize'><strong>" + columns[i] + " </strong></div>";
+            trace_data += "<div class='col-md-10 text-left'>" + info[columns[i]] + "</div>";
+          }
+          trace_data += "</div>";
+
+          var output = (
+            '<div class="modal-header"> Trace Point Details </div>' +
+            '<div class="modal-body">' + trace_data + '</div>' +
+            '<div class="modal-footer"> <span class="glyphicon glyphicon-cloud </div>'
+          )
+
+
+          var modal_instance = $modal.open({
+            "template": output,
+            "size": "lg"
+          });
+        }
+
+        $scope.tree = [convert_input(OSProfilerData)];
+
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div ng-controller="ProfilerCtlr">
+      <table>
+
+      </table>
+      <table class="trace">
+        <tr class="bold text-left" style="border-bottom: solid 1px gray">
+          <td class="level">Levels</td>
+          <td>Duration</td>
+          <td class="text-right">Type</td>
+          <td>Project</td>
+          <td>Service</td>
+          <td>Host</td>
+          <td class="details">Details</td>
+        </tr>
+      </table>
+      <div ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></div>
+    </div>
+
+  </body>
+
+</html>

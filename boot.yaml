@@ -4,13 +4,13 @@
       args:
         profile:
         flavor:
-            name: "m1.micro"
+            name: "m1.tiny"
         image:
-            name: "ubuntu"
+            name: "larsks/thttpd"
       runner:
         type: "constant"
-        times: 20
-        concurrency: 20
+        times: 60
+        concurrency: 1
       context:
         users:
           tenants: 1
