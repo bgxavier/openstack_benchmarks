@@ -1,0 +1,209 @@
+<!doctype html>
+<html ng-app="Application">
+
+  <head>
+    <script>
+        var OSProfilerData = {"info": {"started": 0, "finished": 53034, "name": "total"}, "children": [{"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 450, "project": "nova", "started": 0, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/4bb797da1e24412e88b2ac5b37a21ed3/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "aa1cac6a-06b7-4b9f-8451-39387e8863c5", "trace_id": "42a5317a-483b-4333-8cd8-ae3e9f82b09f", "children": [{"info": {"name": "wsgi", "service": "api", "info.request:host_url": "http://10.32.45.201:9292", "info.request:scheme": "http", "finished": 444, "project": "glance", "started": 81, "host": "0.0.0.0", "info.request:method": "HEAD", "info.request:query": "", "info.request:path": "/v1/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "42a5317a-483b-4333-8cd8-ae3e9f82b09f", "trace_id": "025d5709-728e-4cac-8663-f5488bbbcd6e", "children": [{"info": {"name": "wsgi", "service": "registry", "info.request:host_url": "http://0.0.0.0:9191", "info.request:scheme": "http", "finished": 438, "project": "glance", "started": 256, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "025d5709-728e-4cac-8663-f5488bbbcd6e", "trace_id": "8cc9781a-35a0-4fd9-9133-cd6fe131356f", "children": []}]}]}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 481, "project": "nova", "started": 462, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/4bb797da1e24412e88b2ac5b37a21ed3/flavors/6"}, "parent_id": "aa1cac6a-06b7-4b9f-8451-39387e8863c5", "trace_id": "ecfd164f-d828-4eac-b92d-3aaf9955018f", "children": []}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1150, "project": "nova", "started": 487, "host": "0.0.0.0", "info.request:method": "POST", "info.request:query": "", "info.request:path": "/v2/4bb797da1e24412e88b2ac5b37a21ed3/servers"}, "parent_id": "aa1cac6a-06b7-4b9f-8451-39387e8863c5", "trace_id": "d63111ca-0705-4d5d-994d-7d5029764cf3", "children": [{"info": {"name": "wsgi", "service": "api", "info.request:host_url": "http://10.32.45.201:9292", "info.request:scheme": "http", "finished": 862, "project": "glance", "started": 508, "host": "0.0.0.0", "info.request:method": "HEAD", "info.request:query": "", "info.request:path": "/v1/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "d63111ca-0705-4d5d-994d-7d5029764cf3", "trace_id": "882dccff-a8eb-45d2-b574-d02b508b61ce", "children": [{"info": {"name": "wsgi", "service": "registry", "info.request:host_url": "http://0.0.0.0:9191", "info.request:scheme": "http", "finished": 857, "project": "glance", "started": 683, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "882dccff-a8eb-45d2-b574-d02b508b61ce", "trace_id": "9f6f6519-44c7-474d-9082-c99a89288143", "children": []}]}, {"info": {"info.function:name": "oslo_messaging.rpc.server.SchedulerManager.inner", "name": "rpc", "service": "nova-scheduler", "started": 1166, "finished": 1186, "info.function:args": "(<nova.scheduler.manager.SchedulerManager object at 0x7fb9fb68a4d0>, <nova.context.RequestContext object at 0x7fb9f9d43850>)", "project": "nova", "host": "controller", "info.function:kwargs": "{u'request_spec': {u'instance_properties': {u'vm_state': u'building', u'pci_requests': {u'instance_uuid': u'81162c82-539d-41e7-b292-f0fb7246a1be', u'requests': []}, u'availability_zone': None, u'terminated_at': None, u'ephemeral_gb': 0, u'instance_type_id': 6, u'user_data': None, u'numa_topology': None, u'cleaned': False, u'vm_mode': None, u'deleted_at': None, u'reservation_id': u'r-pxsiwg03', u'id': 103, u'security_groups': [], u'disable_terminate': False, u'root_device_name': None, u'display_name': u'osv', u'uuid': u'81162c82-539d-41e7-b292-f0fb7246a1be', u'default_swap_device': None, u'info_cache': {u'instance_uuid': u'81162c82-539d-41e7-b292-f0fb7246a1be', u'deleted': False, u'network_info': [], u'created_at': u'2015-07-20T02:47:48.000000', u'deleted_at': None, u'updated_at': None}, u'hostname': u'osv', u'launched_on': None, u'display_description': u'osv', u'key_data': None, u'deleted': False, u'config_drive': u'', u'power_state': 0, u'default_ephemeral_device': None, u'progress': 0, u'project_id': u'4bb797da1e24412e88b2ac5b37a21ed3', u'launched_at': None, u'scheduled_at': None, u'node': None, u'ramdisk_id': u'', u'access_ip_v6': None, u'access_ip_v4': None, u'kernel_id': u'', u'key_name': None, u'updated_at': None, u'host': None, u'root_gb': 4, u'user_id': u'16c5b30a8c864a39b4a78cd807703fba', u'system_metadata': {u'image_min_disk': u'4', u'instance_type_memory_mb': 512, u'instance_type_swap': 0, u'instance_type_vcpu_weight': 0, u'instance_type_root_gb': 4, u'instance_type_id': 6, u'instance_type_name': u'm1.micro', u'instance_type_ephemeral_gb': 0, u'instance_type_rxtx_factor': 1.0, u'instance_type_flavorid': u'6', u'instance_type_vcpus': 1, u'image_container_format': u'bare', u'image_min_ram': u'0', u'image_disk_format': u'qcow2', u'image_base_image_ref': u'35811706-a6d8-490b-aefa-046e2e6a2315'}, u'task_state': u'scheduling', u'shutdown_terminate': False, u'cell_name': None, u'ephemeral_key_uuid': None, u'locked': False, u'name': u'instance-00000067', u'created_at': u'2015-07-20T02:47:48.000000', u'locked_by': None, u'launch_index': 0, u'memory_mb': 512, u'vcpus': 1, u'image_ref': u'35811706-a6d8-490b-aefa-046e2e6a2315', u'architecture': None, u'auto_disk_config': False, u'os_type': None, u'metadata': {}}, u'instance_type': {u'deleted': False, u'ephemeral_gb': 0, u'updated_at': None, u'disabled': False, u'extra_specs': {}, u'rxtx_factor': 1.0, u'is_public': True, u'flavorid': u'6', u'id': 6, u'root_gb': 4, u'deleted_at': None, u'name': u'm1.micro', u'created_at': u'2015-07-18T14:18:01.000000', u'memory_mb': 512, u'vcpus': 1, u'swap': 0, u'vcpu_weight': 0}, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-18T14:17:31.000000', u'owner': u'4d9fd57c23564713bf54e48fc6e8c284', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 92078080, u'name': u'osv-tomcat', u'checksum': u'6fd6772a0dd51161d68d8f5836074cdc', u'created_at': u'2015-07-18T14:17:30.000000', u'disk_format': u'qcow2', u'id': u'35811706-a6d8-490b-aefa-046e2e6a2315'}, u'num_instances': 1}, u'filter_properties': {u'instance_type': Flavor(created_at=2015-07-18T14:18:01Z,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='6',id=6,is_public=True,memory_mb=512,name='m1.micro',projects=<?>,root_gb=4,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'retry': {u'num_attempts': 1, u'hosts': []}, u'scheduler_hints': {}}}"}, "parent_id": "d63111ca-0705-4d5d-994d-7d5029764cf3", "trace_id": "e29c1ef8-8877-4069-8b46-3a5cf556c9f8", "children": []}, {"info": {"info.function:name": "nova.compute.manager.ComputeManager.build_and_run_instance", "name": "rpc", "service": "nova-compute", "started": 53027, "finished": 53034, "info.function:args": "(<nova.compute.manager.ComputeManager object at 0x7f0b7a184f10>, <nova.context.RequestContext object at 0x7f0b640f0b50>, Instance(access_ip_v4=None,access_ip_v6=None,architecture=None,auto_disk_config=False,availability_zone=None,cell_name=None,cleaned=False,config_drive='',created_at=2015-07-20T02:47:48Z,default_ephemeral_device=None,default_swap_device=None,deleted=False,deleted_at=None,disable_terminate=False,display_description='osv',display_name='osv',ephemeral_gb=0,ephemeral_key_uuid=None,fault=<?>,flavor=Flavor(6),host=None,hostname='osv',id=103,image_ref='35811706-a6d8-490b-aefa-046e2e6a2315',info_cache=InstanceInfoCache,instance_type_id=6,kernel_id='',key_data=None,key_name=None,launch_index=0,launched_at=None,launched_on=None,locked=False,locked_by=None,memory_mb=512,metadata={},new_flavor=None,node=None,numa_topology=None,old_flavor=None,os_type=None,pci_devices=<?>,pci_requests=InstancePCIRequests,power_state=0,progress=0,project_id='4bb797da1e24412e88b2ac5b37a21ed3',ramdisk_id='',reservation_id='r-pxsiwg03',root_device_name=None,root_gb=4,scheduled_at=None,security_groups=SecurityGroupList,shutdown_terminate=False,system_metadata={image_base_image_ref='35811706-a6d8-490b-aefa-046e2e6a2315',image_container_format='bare',image_disk_format='qcow2',image_min_disk='4',image_min_ram='0'},tags=<?>,task_state='scheduling',terminated_at=None,updated_at=None,user_data=None,user_id='16c5b30a8c864a39b4a78cd807703fba',uuid=81162c82-539d-41e7-b292-f0fb7246a1be,vcpu_model=<?>,vcpus=1,vm_mode=None,vm_state='building'), {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-18T14:17:31.000000', u'min_disk': 0, u'owner': u'4d9fd57c23564713bf54e48fc6e8c284', u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 92078080, u'name': u'osv-tomcat', u'checksum': u'6fd6772a0dd51161d68d8f5836074cdc', u'created_at': u'2015-07-18T14:17:30.000000', u'disk_format': u'qcow2', u'id': u'35811706-a6d8-490b-aefa-046e2e6a2315'}, {u'instance_properties': {u'vm_state': u'building', u'pci_requests': {u'instance_uuid': u'81162c82-539d-41e7-b292-f0fb7246a1be', u'requests': []}, u'availability_zone': None, u'terminated_at': None, u'ephemeral_gb': 0, u'instance_type_id': 6, u'user_data': None, u'numa_topology': None, u'cleaned': False, u'vm_mode': None, u'deleted_at': None, u'reservation_id': u'r-pxsiwg03', u'id': 103, u'security_groups': [], u'disable_terminate': False, u'root_device_name': None, u'display_name': u'osv', u'uuid': u'81162c82-539d-41e7-b292-f0fb7246a1be', u'default_swap_device': None, u'info_cache': {u'instance_uuid': u'81162c82-539d-41e7-b292-f0fb7246a1be', u'deleted': False, u'network_info': [], u'created_at': u'2015-07-20T02:47:48.000000', u'deleted_at': None, u'updated_at': None}, u'hostname': u'osv', u'launched_on': None, u'display_description': u'osv', u'key_data': None, u'deleted': False, u'config_drive': u'', u'power_state': 0, u'default_ephemeral_device': None, u'progress': 0, u'project_id': u'4bb797da1e24412e88b2ac5b37a21ed3', u'launched_at': None, u'scheduled_at': None, u'node': None, u'ramdisk_id': u'', u'access_ip_v6': None, u'access_ip_v4': None, u'kernel_id': u'', u'key_name': None, u'updated_at': None, u'host': None, u'root_gb': 4, u'user_id': u'16c5b30a8c864a39b4a78cd807703fba', u'system_metadata': {u'image_min_disk': u'4', u'instance_type_memory_mb': 512, u'instance_type_swap': 0, u'instance_type_vcpu_weight': 0, u'instance_type_root_gb': 4, u'instance_type_id': 6, u'instance_type_name': u'm1.micro', u'instance_type_ephemeral_gb': 0, u'instance_type_rxtx_factor': 1.0, u'instance_type_flavorid': u'6', u'instance_type_vcpus': 1, u'image_container_format': u'bare', u'image_min_ram': u'0', u'image_disk_format': u'qcow2', u'image_base_image_ref': u'35811706-a6d8-490b-aefa-046e2e6a2315'}, u'task_state': u'scheduling', u'shutdown_terminate': False, u'cell_name': None, u'ephemeral_key_uuid': None, u'locked': False, u'name': u'instance-00000067', u'created_at': u'2015-07-20T02:47:48.000000', u'locked_by': None, u'launch_index': 0, u'memory_mb': 512, u'vcpus': 1, u'image_ref': u'35811706-a6d8-490b-aefa-046e2e6a2315', u'architecture': None, u'auto_disk_config': False, u'os_type': None, u'metadata': {}}, u'instance_type': {u'deleted': False, u'ephemeral_gb': 0, u'updated_at': None, u'disabled': False, u'extra_specs': {}, u'rxtx_factor': 1.0, u'is_public': True, u'flavorid': u'6', u'id': 6, u'root_gb': 4, u'deleted_at': None, u'name': u'm1.micro', u'created_at': u'2015-07-18T14:18:01.000000', u'memory_mb': 512, u'vcpus': 1, u'swap': 0, u'vcpu_weight': 0}, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-18T14:17:31.000000', u'owner': u'4d9fd57c23564713bf54e48fc6e8c284', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 92078080, u'name': u'osv-tomcat', u'checksum': u'6fd6772a0dd51161d68d8f5836074cdc', u'created_at': u'2015-07-18T14:17:30.000000', u'disk_format': u'qcow2', u'id': u'35811706-a6d8-490b-aefa-046e2e6a2315'}, u'num_instances': 1}, {u'instance_type': Flavor(created_at=2015-07-18T14:18:01Z,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='6',id=6,is_public=True,memory_mb=512,name='m1.micro',projects=<?>,root_gb=4,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'retry': {u'num_attempts': 1, u'hosts': [[u'compute', u'compute']]}, u'limits': {u'memory_mb': 193342.5}, u'scheduler_hints': {}})", "project": "nova", "host": "compute", "info.function:kwargs": "{'node': u'compute', 'requested_networks': None, 'limits': {u'memory_mb': 193342.5}, 'block_device_mapping': BlockDeviceMappingList(objects=[BlockDeviceMapping(103)]), 'admin_password': u'hx9s7k4RDDkx', 'injected_files': [], 'security_groups': [u'default']}"}, "parent_id": "d63111ca-0705-4d5d-994d-7d5029764cf3", "trace_id": "3c6898f0-5da6-4fb2-a6ae-5bf02d2575b0", "children": []}]}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1238, "project": "nova", "started": 1157, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/4bb797da1e24412e88b2ac5b37a21ed3/servers/81162c82-539d-41e7-b292-f0fb7246a1be"}, "parent_id": "aa1cac6a-06b7-4b9f-8451-39387e8863c5", "trace_id": "525ce89a-f81b-481d-898f-cef5b526d6b3", "children": []}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1263, "project": "nova", "started": 1245, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/4bb797da1e24412e88b2ac5b37a21ed3/flavors/6"}, "parent_id": "aa1cac6a-06b7-4b9f-8451-39387e8863c5", "trace_id": "2c972a52-74ba-4140-8ab0-040c751e8ea4", "children": []}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1557, "project": "nova", "started": 1270, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/4bb797da1e24412e88b2ac5b37a21ed3/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "aa1cac6a-06b7-4b9f-8451-39387e8863c5", "trace_id": "5d3594f0-ce81-4248-888a-7cb871897d7c", "children": [{"info": {"name": "wsgi", "service": "api", "info.request:host_url": "http://10.32.45.201:9292", "info.request:scheme": "http", "finished": 1551, "project": "glance", "started": 1279, "host": "0.0.0.0", "info.request:method": "HEAD", "info.request:query": "", "info.request:path": "/v1/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "5d3594f0-ce81-4248-888a-7cb871897d7c", "trace_id": "b5f39478-48eb-4dcb-ae8b-316f71c035ec", "children": [{"info": {"name": "wsgi", "service": "registry", "info.request:host_url": "http://0.0.0.0:9191", "info.request:scheme": "http", "finished": 1545, "project": "glance", "started": 1358, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/images/35811706-a6d8-490b-aefa-046e2e6a2315"}, "parent_id": "b5f39478-48eb-4dcb-ae8b-316f71c035ec", "trace_id": "58f0e20f-3215-4c2a-aee8-237530e6372c", "children": []}]}]}]}
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+
+    <style>
+
+      .trace {
+        min-width: 900px;
+        width: 100%;
+      }
+
+      .trace tr.active-true {
+        background-color: #D9EDF7!important;
+      }
+
+      .trace tr td {
+        width: 14%;
+        white-space: nowrap;
+        padding: 2px;
+        border-right: 1px solid #eee;
+
+      }
+      .trace tr td.details {
+        width: 10%;
+        padding-right: 20px;
+      }
+      .trace.cursor_pointer_on_hover {
+        cursor: pointer;
+      }
+      .trace .level {
+        width: 10%;
+        font-weight: bold;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .duration {
+        width: 25px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #c6eff3;
+        border-radius: 4px;
+        font-size: 10px;
+
+      }
+
+      .duration div{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/ng-template"  id="tree_item_renderer.html">
+
+        <div ng-init="hide_children=false">
+          <table class="trace cursor_pointer_on_hover">
+            <tr class="active-{{hover}}" ng-init="hover=false" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
+              <td class="level" style="padding-left:{{data.level * 5}}px;">
+                <button type="button" class="btn btn-default btn-xs" ng-disabled="data.is_leaf" ng-click="hide_children=!hide_children">
+                  <span class="glyphicon glyphicon-{{ (data.is_leaf) ? 'cloud' : ((hide_children) ? 'plus': 'minus')}}"></span>
+                  {{data.level || 0}}
+                </button>
+              </td>
+              <td ng-click="display(data);" class="text-center">
+               <div class="duration" style="width: {{get_width(data)}}%; margin-left: {{get_started(data)}}%">
+                  <div>{{data.info.finished - data.info.started}} ms</div>
+                </div>
+              </td>
+              <td ng-click="display(data);" class="{{ is_important(data) ? 'bold' : ''}} text-right" > {{data.info.name}} </td>
+              <td ng-click="display(data);"> {{data.info.project  || "n/a"}}</td>
+              <td ng-click="display(data);"> {{data.info.service  || "n/a" }} </td>
+              <td ng-click="display(data);"> {{data.info.host || "n/a"}} </td>
+              <td class="details">
+                <a href="#" ng-click="display(data);"> Details </a>
+              </td>
+            </tr>
+          </table>
+
+
+        <div ng-hide="hide_children">
+          <div ng-repeat="data in data.children" ng-include="'tree_item_renderer.html'"> </div>
+        </div>
+      </div>
+
+
+    </script>
+
+    <script>
+      angular.module("Application", ['ui.bootstrap']);
+
+      function ProfilerCtlr($scope, $modal) {
+
+        var convert_input = function(input, level){
+          level = (level) ? level : 0;
+          input.level = level;
+          input.is_leaf = !input.children.length
+
+          for (var i=0; i < input.children.length; i++)
+            convert_input(input.children[i], level + 1);
+          return input;
+        }
+
+        $scope.get_width = function(data){
+
+          var full_duration = $scope.tree[0].info.finished;
+          var duration = (data.info.finished - data.info.started) * 100.0 / full_duration;
+          return (duration >= 0.5) ? duration : 0.5;
+        }
+
+        $scope.get_started = function(data) {
+          var full_duration = $scope.tree[0].info.finished;
+          return data.info.started * 100.0 / full_duration;
+        }
+
+        $scope.is_important = function(data) {
+          return ["total", "wsgi", "rpc"].indexOf(data.info.name) != -1;
+        }
+
+        $scope.display = function(data){
+          var info = angular.copy(data.info);
+
+          var metadata = {};
+          angular.forEach(info, function(value, key) {
+            var parts = key.split(".");
+            if (parts[0] == "info"){
+
+              if (parts.length != 2){
+                this[key] = value;
+              }
+              else{
+                var group_name = parts[1].split(":");
+                if (group_name.length == 2){
+                  if (!(group_name[0] in this))
+                    this[group_name[0]] = {};
+
+                  this[group_name[0]][group_name[1]] = value;
+                }
+              }
+            };
+          }, metadata);
+
+          info["metadata"] = "<pre>" + JSON.stringify(metadata, "", 4) + "</pre>"
+
+          var trace_data = "<div class='row'>"
+          columns = ["name", "project", "service", "host", "started",
+                     "finished", "host", "metadata"];
+          for (var i = 0; i < columns.length; i++){
+            trace_data += "<div class='col-md-2 text-right text-capitalize'><strong>" + columns[i] + " </strong></div>";
+            trace_data += "<div class='col-md-10 text-left'>" + info[columns[i]] + "</div>";
+          }
+          trace_data += "</div>";
+
+          var output = (
+            '<div class="modal-header"> Trace Point Details </div>' +
+            '<div class="modal-body">' + trace_data + '</div>' +
+            '<div class="modal-footer"> <span class="glyphicon glyphicon-cloud </div>'
+          )
+
+
+          var modal_instance = $modal.open({
+            "template": output,
+            "size": "lg"
+          });
+        }
+
+        $scope.tree = [convert_input(OSProfilerData)];
+
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div ng-controller="ProfilerCtlr">
+      <table>
+
+      </table>
+      <table class="trace">
+        <tr class="bold text-left" style="border-bottom: solid 1px gray">
+          <td class="level">Levels</td>
+          <td>Duration</td>
+          <td class="text-right">Type</td>
+          <td>Project</td>
+          <td>Service</td>
+          <td>Host</td>
+          <td class="details">Details</td>
+        </tr>
+      </table>
+      <div ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></div>
+    </div>
+
+  </body>
+
+</html>

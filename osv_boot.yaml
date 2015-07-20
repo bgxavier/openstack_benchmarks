@@ -4,13 +4,13 @@
       args:
         profile:
         flavor:
-            name: "m1.tiny"
+            name: "m1.micro"
         image:
-            name: "larsks/thttpd"
+            name: "osv-tomcat"
       runner:
         type: "constant"
-        times: 60
-        concurrency: 1
+        times: 5
+        concurrency: 5
       context:
         users:
           tenants: 1

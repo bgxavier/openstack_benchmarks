@@ -1,16 +1,16 @@
 ---
-  NovaServers.boot_server_from_volume:
+  NovaServers.boot_server:
     -
       args:
+        profile:
         flavor:
             name: "m1.micro"
         image:
-            name: "ubuntu"
-        volume_size: 4
+            name: "docker-tomcat"
       runner:
         type: "constant"
-        times: 1
-        concurrency: 1
+        times: 10
+        concurrency: 10
       context:
         users:
           tenants: 1
