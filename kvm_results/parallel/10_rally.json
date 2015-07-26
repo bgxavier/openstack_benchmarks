@@ -1,0 +1,168 @@
+[
+    {
+        "full_duration": 43.666972160339355, 
+        "key": {
+            "kw": {
+                "args": {
+                    "flavor": {
+                        "name": "m1.micro"
+                    }, 
+                    "image": {
+                        "name": "ubuntu-tomcat"
+                    }, 
+                    "profile": null
+                }, 
+                "context": {
+                    "users": {
+                        "project_domain": "default", 
+                        "resource_management_workers": 30, 
+                        "tenants": 1, 
+                        "user_domain": "default", 
+                        "users_per_tenant": 1
+                    }
+                }, 
+                "runner": {
+                    "concurrency": 10, 
+                    "times": 10, 
+                    "type": "constant"
+                }
+            }, 
+            "name": "NovaServers.boot_server", 
+            "pos": 0
+        }, 
+        "load_duration": 30.123053073883057, 
+        "result": [
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 27.73493790626526
+                }, 
+                "duration": 27.735029935836792, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.67804
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 27.871442079544067
+                }, 
+                "duration": 27.871588945388794, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.682423
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 27.944424867630005
+                }, 
+                "duration": 27.94453191757202, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.686738
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 28.005792140960693
+                }, 
+                "duration": 28.00589394569397, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.676091
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 28.905557870864868
+                }, 
+                "duration": 28.90565299987793, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.68084
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 28.945457935333252
+                }, 
+                "duration": 28.945558071136475, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.677983
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 29.564116954803467
+                }, 
+                "duration": 29.564267873764038, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.674081
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 29.679189920425415
+                }, 
+                "duration": 29.679313898086548, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.68264
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 29.704807996749878
+                }, 
+                "duration": 29.704895973205566, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.68425
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 30.09818410873413
+                }, 
+                "duration": 30.09830117225647, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437945024.688032
+            }
+        ], 
+        "sla": []
+    }
+]
