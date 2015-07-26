@@ -1,0 +1,90 @@
+[
+    {
+        "full_duration": 16.145650148391724, 
+        "key": {
+            "kw": {
+                "args": {
+                    "flavor": {
+                        "name": "m1.micro"
+                    }, 
+                    "image": {
+                        "name": "ubuntu-tomcat"
+                    }, 
+                    "profile": null
+                }, 
+                "context": {
+                    "users": {
+                        "project_domain": "default", 
+                        "resource_management_workers": 30, 
+                        "tenants": 1, 
+                        "user_domain": "default", 
+                        "users_per_tenant": 1
+                    }
+                }, 
+                "runner": {
+                    "concurrency": 4, 
+                    "times": 4, 
+                    "type": "constant"
+                }
+            }, 
+            "name": "NovaServers.boot_server", 
+            "pos": 0
+        }, 
+        "load_duration": 7.294872045516968, 
+        "result": [
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 7.145570993423462
+                }, 
+                "duration": 7.145654916763306, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437927088.845642
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 7.207896947860718
+                }, 
+                "duration": 7.207992076873779, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437927088.845093
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 7.239681959152222
+                }, 
+                "duration": 7.239772081375122, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437927088.848605
+            }, 
+            {
+                "atomic_actions": {
+                    "nova.boot_server": 7.283785104751587
+                }, 
+                "duration": 7.283891201019287, 
+                "error": [], 
+                "idle_duration": 0, 
+                "scenario_output": {
+                    "data": {}, 
+                    "errors": ""
+                }, 
+                "timestamp": 1437927088.842085
+            }
+        ], 
+        "sla": []
+    }
+]
