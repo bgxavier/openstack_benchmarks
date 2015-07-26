@@ -9,8 +9,8 @@
             name: "osv-tomcat"
       runner:
         type: "constant"
-        times: 30
-        concurrency: 30
+        times: 1
+        concurrency: 1
       context:
         users:
           tenants: 1
