@@ -1,0 +1,17 @@
+---
+  NovaServers.boot_server:
+    -
+      args:
+        profile:
+        flavor:
+            name: "m1.micro"
+        image:
+            name: "ubuntu-tomcat"
+      runner:
+        type: "constant"
+        times: 5
+        concurrency: 5
+      context:
+        users:
+          tenants: 1
+          users_per_tenant: 1
