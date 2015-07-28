@@ -9,8 +9,8 @@
             name: "tomcat"
       runner:
         type: "constant"
-        times: 30
-        concurrency: 30
+        times: 15
+        concurrency: 15
       context:
         users:
           tenants: 1
