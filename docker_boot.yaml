@@ -6,7 +6,7 @@
         flavor:
             name: "m1.micro"
         image:
-            name: "docker-tomcat"
+            name: "tomcat"
       runner:
         type: "constant"
         times: 10
