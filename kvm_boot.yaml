@@ -9,8 +9,8 @@
             name: "ubuntu-tomcat"
       runner:
         type: "constant"
-        times: 20
-        concurrency: 20
+        times: 1
+        concurrency: 1
       context:
         users:
           tenants: 1
