@@ -1,0 +1,209 @@
+<!doctype html>
+<html ng-app="Application">
+
+  <head>
+    <script>
+        var OSProfilerData = {"info": {"started": 0, "finished": 1778, "name": "total"}, "children": [{"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 875, "project": "nova", "started": 331, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/cad2e037f77d4e2b8a2eb37ba21c1f77/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "0a03db4a-cce8-4f33-a6fd-48e497f07bf0", "trace_id": "ff638fbb-e834-4fba-978e-61088c162257", "children": [{"info": {"name": "wsgi", "service": "api", "info.request:host_url": "http://10.32.45.201:9292", "info.request:scheme": "http", "finished": 869, "project": "glance", "started": 518, "host": "0.0.0.0", "info.request:method": "HEAD", "info.request:query": "", "info.request:path": "/v1/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "ff638fbb-e834-4fba-978e-61088c162257", "trace_id": "9f3f03ee-3e36-428b-9bae-7301f66b96d3", "children": [{"info": {"name": "wsgi", "service": "registry", "info.request:host_url": "http://0.0.0.0:9191", "info.request:scheme": "http", "finished": 863, "project": "glance", "started": 684, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "9f3f03ee-3e36-428b-9bae-7301f66b96d3", "trace_id": "377bc1a3-184e-4507-a3c9-0b38cea3175f", "children": []}]}]}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 907, "project": "nova", "started": 887, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/cad2e037f77d4e2b8a2eb37ba21c1f77/flavors/6"}, "parent_id": "0a03db4a-cce8-4f33-a6fd-48e497f07bf0", "trace_id": "96f9c23c-7ecb-47be-b897-511a913d1079", "children": []}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1535, "project": "nova", "started": 914, "host": "0.0.0.0", "info.request:method": "POST", "info.request:query": "", "info.request:path": "/v2/cad2e037f77d4e2b8a2eb37ba21c1f77/servers"}, "parent_id": "0a03db4a-cce8-4f33-a6fd-48e497f07bf0", "trace_id": "697fd40f-4c07-4453-8c20-390ac6345d46", "children": [{"info": {"name": "wsgi", "service": "api", "info.request:host_url": "http://10.32.45.201:9292", "info.request:scheme": "http", "finished": 1178, "project": "glance", "started": 936, "host": "0.0.0.0", "info.request:method": "HEAD", "info.request:query": "", "info.request:path": "/v1/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "697fd40f-4c07-4453-8c20-390ac6345d46", "trace_id": "421c0506-37e6-4d4b-989d-88c452eb2c77", "children": [{"info": {"name": "wsgi", "service": "registry", "info.request:host_url": "http://0.0.0.0:9191", "info.request:scheme": "http", "finished": 1172, "project": "glance", "started": 994, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "421c0506-37e6-4d4b-989d-88c452eb2c77", "trace_id": "d97ff764-1358-4bf1-99d9-791063d9782e", "children": []}]}, {"info": {"info.function:name": "nova.conductor.manager.ComputeTaskManager.build_instances", "name": "rpc", "service": "nova-conductor", "started": 1538, "finished": 1641, "info.function:args": "(<nova.conductor.manager.ComputeTaskManager object at 0x7f7eb9738190>, <nova.context.RequestContext object at 0x7f7eb3e3fbd0>)", "project": "nova", "host": "controller", "info.function:kwargs": "{u'requested_networks': None, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-28T07:10:51.000000', u'owner': u'4c71ebc3d1254d1e812f0c67502934ab', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1197080576, u'name': u'\\u201cubuntu-tomcat\\u201d', u'checksum': u'067770bb014b98bf088ec353128da9fd', u'created_at': u'2015-07-28T07:10:45.000000', u'disk_format': u'qcow2', u'id': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'filter_properties': {u'instance_type': Flavor(created_at=2015-07-28T07:10:38Z,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='6',id=6,is_public=True,memory_mb=512,name='m1.micro',projects=<?>,root_gb=4,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'scheduler_hints': {}}, u'instances': [Instance(access_ip_v4=None,access_ip_v6=None,architecture=None,auto_disk_config=False,availability_zone=None,cell_name=None,cleaned=False,config_drive='',created_at=2015-07-29T00:38:47Z,default_ephemeral_device=None,default_swap_device=None,deleted=False,deleted_at=None,disable_terminate=False,display_description='tomcat',display_name='tomcat',ephemeral_gb=0,ephemeral_key_uuid=None,fault=<?>,flavor=Flavor(6),host=None,hostname='tomcat',id=3,image_ref='61eb6a71-a3b2-44b3-b171-34d1bf6e6b87',info_cache=InstanceInfoCache,instance_type_id=6,kernel_id='',key_data=None,key_name=None,launch_index=0,launched_at=None,launched_on=None,locked=False,locked_by=None,memory_mb=512,metadata={},new_flavor=None,node=None,numa_topology=None,old_flavor=None,os_type=None,pci_devices=<?>,pci_requests=InstancePCIRequests,power_state=0,progress=0,project_id='cad2e037f77d4e2b8a2eb37ba21c1f77',ramdisk_id='',reservation_id='r-viajcjvr',root_device_name=None,root_gb=4,scheduled_at=None,security_groups=SecurityGroupList,shutdown_terminate=False,system_metadata={image_base_image_ref='61eb6a71-a3b2-44b3-b171-34d1bf6e6b87',image_container_format='bare',image_disk_format='qcow2',image_min_disk='4',image_min_ram='0'},tags=<?>,task_state='scheduling',terminated_at=None,updated_at=None,user_data=None,user_id='f6ad76a85480463782a174c34da41886',uuid=84070459-4bb9-4f70-aea1-334ec4d2aa41,vcpu_model=<?>,vcpus=1,vm_mode=None,vm_state='building')], u'admin_password': u'85HemEB8v9TY', u'injected_files': [], u'security_groups': [u'default']}"}, "parent_id": "697fd40f-4c07-4453-8c20-390ac6345d46", "trace_id": "bbca8478-999c-4dcd-9291-c9d01040d0d3", "children": [{"info": {"info.function:name": "nova.compute.manager._ComputeV4Proxy.build_and_run_instance", "name": "rpc", "service": "nova-compute", "started": 0, "finished": 18, "info.function:args": "(<nova.compute.manager._ComputeV4Proxy object at 0x7f68801c2a90>, <nova.context.RequestContext object at 0x7f687fefa8d0>)", "project": "nova", "host": "compute", "info.function:kwargs": "{u'node': u'compute', u'request_spec': {u'instance_properties': {u'vm_state': u'building', u'pci_requests': {u'instance_uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'requests': []}, u'availability_zone': None, u'terminated_at': None, u'ephemeral_gb': 0, u'instance_type_id': 6, u'user_data': None, u'numa_topology': None, u'cleaned': False, u'vm_mode': None, u'deleted_at': None, u'reservation_id': u'r-viajcjvr', u'id': 3, u'security_groups': [], u'disable_terminate': False, u'root_device_name': None, u'display_name': u'tomcat', u'uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'default_swap_device': None, u'info_cache': {u'instance_uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'deleted': False, u'network_info': [], u'created_at': u'2015-07-29T00:38:47.000000', u'deleted_at': None, u'updated_at': None}, u'hostname': u'tomcat', u'launched_on': None, u'display_description': u'tomcat', u'key_data': None, u'deleted': False, u'config_drive': u'', u'power_state': 0, u'default_ephemeral_device': None, u'progress': 0, u'project_id': u'cad2e037f77d4e2b8a2eb37ba21c1f77', u'launched_at': None, u'scheduled_at': None, u'node': None, u'ramdisk_id': u'', u'access_ip_v6': None, u'access_ip_v4': None, u'kernel_id': u'', u'key_name': None, u'updated_at': None, u'host': None, u'root_gb': 4, u'user_id': u'f6ad76a85480463782a174c34da41886', u'system_metadata': {u'image_min_disk': u'4', u'instance_type_memory_mb': 512, u'instance_type_swap': 0, u'instance_type_vcpu_weight': 0, u'instance_type_root_gb': 4, u'instance_type_id': 6, u'instance_type_name': u'm1.micro', u'instance_type_ephemeral_gb': 0, u'instance_type_rxtx_factor': 1.0, u'instance_type_flavorid': u'6', u'instance_type_vcpus': 1, u'image_container_format': u'bare', u'image_min_ram': u'0', u'image_disk_format': u'qcow2', u'image_base_image_ref': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'task_state': u'scheduling', u'shutdown_terminate': False, u'cell_name': None, u'ephemeral_key_uuid': None, u'locked': False, u'name': u'instance-00000003', u'created_at': u'2015-07-29T00:38:47.000000', u'locked_by': None, u'launch_index': 0, u'memory_mb': 512, u'vcpus': 1, u'image_ref': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87', u'architecture': None, u'auto_disk_config': False, u'os_type': None, u'metadata': {}}, u'instance_type': {u'deleted': False, u'ephemeral_gb': 0, u'updated_at': None, u'disabled': False, u'extra_specs': {}, u'rxtx_factor': 1.0, u'is_public': True, u'flavorid': u'6', u'id': 6, u'root_gb': 4, u'deleted_at': None, u'name': u'm1.micro', u'created_at': u'2015-07-28T07:10:38.000000', u'memory_mb': 512, u'vcpus': 1, u'swap': 0, u'vcpu_weight': 0}, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-28T07:10:51.000000', u'owner': u'4c71ebc3d1254d1e812f0c67502934ab', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1197080576, u'name': u'\\u201cubuntu-tomcat\\u201d', u'checksum': u'067770bb014b98bf088ec353128da9fd', u'created_at': u'2015-07-28T07:10:45.000000', u'disk_format': u'qcow2', u'id': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'num_instances': 1}, u'requested_networks': None, u'limits': {u'memory_mb': 193342.5}, u'block_device_mapping': BlockDeviceMappingList(objects=[BlockDeviceMapping(3)]), u'image': {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-28T07:10:51.000000', u'min_disk': 0, u'owner': u'4c71ebc3d1254d1e812f0c67502934ab', u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1197080576, u'name': u'\\u201cubuntu-tomcat\\u201d', u'checksum': u'067770bb014b98bf088ec353128da9fd', u'created_at': u'2015-07-28T07:10:45.000000', u'disk_format': u'qcow2', u'id': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'filter_properties': {u'instance_type': Flavor(created_at=2015-07-28T07:10:38Z,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='6',id=6,is_public=True,memory_mb=512,name='m1.micro',projects=<?>,root_gb=4,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'retry': {u'num_attempts': 1, u'hosts': [[u'compute', u'compute']]}, u'limits': {u'memory_mb': 193342.5}, u'scheduler_hints': {}}, u'instance': Instance(access_ip_v4=None,access_ip_v6=None,architecture=None,auto_disk_config=False,availability_zone=None,cell_name=None,cleaned=False,config_drive='',created_at=2015-07-29T00:38:47Z,default_ephemeral_device=None,default_swap_device=None,deleted=False,deleted_at=None,disable_terminate=False,display_description='tomcat',display_name='tomcat',ephemeral_gb=0,ephemeral_key_uuid=None,fault=<?>,flavor=Flavor(6),host=None,hostname='tomcat',id=3,image_ref='61eb6a71-a3b2-44b3-b171-34d1bf6e6b87',info_cache=InstanceInfoCache,instance_type_id=6,kernel_id='',key_data=None,key_name=None,launch_index=0,launched_at=None,launched_on=None,locked=False,locked_by=None,memory_mb=512,metadata={},new_flavor=None,node=None,numa_topology=None,old_flavor=None,os_type=None,pci_devices=<?>,pci_requests=InstancePCIRequests,power_state=0,progress=0,project_id='cad2e037f77d4e2b8a2eb37ba21c1f77',ramdisk_id='',reservation_id='r-viajcjvr',root_device_name=None,root_gb=4,scheduled_at=None,security_groups=SecurityGroupList,shutdown_terminate=False,system_metadata={image_base_image_ref='61eb6a71-a3b2-44b3-b171-34d1bf6e6b87',image_container_format='bare',image_disk_format='qcow2',image_min_disk='4',image_min_ram='0'},tags=<?>,task_state='scheduling',terminated_at=None,updated_at=None,user_data=None,user_id='f6ad76a85480463782a174c34da41886',uuid=84070459-4bb9-4f70-aea1-334ec4d2aa41,vcpu_model=<?>,vcpus=1,vm_mode=None,vm_state='building'), u'admin_password': u'85HemEB8v9TY', u'injected_files': [], u'security_groups': [u'default']}"}, "parent_id": "bbca8478-999c-4dcd-9291-c9d01040d0d3", "trace_id": "87980c46-080f-4bac-8f1a-7393f3fe3bc5", "children": [{"info": {"info.function:name": "nova.compute.manager.ComputeManager.build_and_run_instance", "name": "rpc", "service": "nova-compute", "started": 6, "finished": 11, "info.function:args": "(<nova.compute.manager.ComputeManager object at 0x7f68806ff810>, <nova.context.RequestContext object at 0x7f687fefa8d0>, Instance(access_ip_v4=None,access_ip_v6=None,architecture=None,auto_disk_config=False,availability_zone=None,cell_name=None,cleaned=False,config_drive='',created_at=2015-07-29T00:38:47Z,default_ephemeral_device=None,default_swap_device=None,deleted=False,deleted_at=None,disable_terminate=False,display_description='tomcat',display_name='tomcat',ephemeral_gb=0,ephemeral_key_uuid=None,fault=<?>,flavor=Flavor(6),host=None,hostname='tomcat',id=3,image_ref='61eb6a71-a3b2-44b3-b171-34d1bf6e6b87',info_cache=InstanceInfoCache,instance_type_id=6,kernel_id='',key_data=None,key_name=None,launch_index=0,launched_at=None,launched_on=None,locked=False,locked_by=None,memory_mb=512,metadata={},new_flavor=None,node=None,numa_topology=None,old_flavor=None,os_type=None,pci_devices=<?>,pci_requests=InstancePCIRequests,power_state=0,progress=0,project_id='cad2e037f77d4e2b8a2eb37ba21c1f77',ramdisk_id='',reservation_id='r-viajcjvr',root_device_name=None,root_gb=4,scheduled_at=None,security_groups=SecurityGroupList,shutdown_terminate=False,system_metadata={image_base_image_ref='61eb6a71-a3b2-44b3-b171-34d1bf6e6b87',image_container_format='bare',image_disk_format='qcow2',image_min_disk='4',image_min_ram='0'},tags=<?>,task_state='scheduling',terminated_at=None,updated_at=None,user_data=None,user_id='f6ad76a85480463782a174c34da41886',uuid=84070459-4bb9-4f70-aea1-334ec4d2aa41,vcpu_model=<?>,vcpus=1,vm_mode=None,vm_state='building'), {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-28T07:10:51.000000', u'min_disk': 0, u'owner': u'4c71ebc3d1254d1e812f0c67502934ab', u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1197080576, u'name': u'\\u201cubuntu-tomcat\\u201d', u'checksum': u'067770bb014b98bf088ec353128da9fd', u'created_at': u'2015-07-28T07:10:45.000000', u'disk_format': u'qcow2', u'id': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, {u'instance_properties': {u'vm_state': u'building', u'pci_requests': {u'instance_uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'requests': []}, u'availability_zone': None, u'terminated_at': None, u'ephemeral_gb': 0, u'instance_type_id': 6, u'user_data': None, u'numa_topology': None, u'cleaned': False, u'vm_mode': None, u'deleted_at': None, u'reservation_id': u'r-viajcjvr', u'id': 3, u'security_groups': [], u'disable_terminate': False, u'root_device_name': None, u'display_name': u'tomcat', u'uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'default_swap_device': None, u'info_cache': {u'instance_uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'deleted': False, u'network_info': [], u'created_at': u'2015-07-29T00:38:47.000000', u'deleted_at': None, u'updated_at': None}, u'hostname': u'tomcat', u'launched_on': None, u'display_description': u'tomcat', u'key_data': None, u'deleted': False, u'config_drive': u'', u'power_state': 0, u'default_ephemeral_device': None, u'progress': 0, u'project_id': u'cad2e037f77d4e2b8a2eb37ba21c1f77', u'launched_at': None, u'scheduled_at': None, u'node': None, u'ramdisk_id': u'', u'access_ip_v6': None, u'access_ip_v4': None, u'kernel_id': u'', u'key_name': None, u'updated_at': None, u'host': None, u'root_gb': 4, u'user_id': u'f6ad76a85480463782a174c34da41886', u'system_metadata': {u'image_min_disk': u'4', u'instance_type_memory_mb': 512, u'instance_type_swap': 0, u'instance_type_vcpu_weight': 0, u'instance_type_root_gb': 4, u'instance_type_id': 6, u'instance_type_name': u'm1.micro', u'instance_type_ephemeral_gb': 0, u'instance_type_rxtx_factor': 1.0, u'instance_type_flavorid': u'6', u'instance_type_vcpus': 1, u'image_container_format': u'bare', u'image_min_ram': u'0', u'image_disk_format': u'qcow2', u'image_base_image_ref': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'task_state': u'scheduling', u'shutdown_terminate': False, u'cell_name': None, u'ephemeral_key_uuid': None, u'locked': False, u'name': u'instance-00000003', u'created_at': u'2015-07-29T00:38:47.000000', u'locked_by': None, u'launch_index': 0, u'memory_mb': 512, u'vcpus': 1, u'image_ref': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87', u'architecture': None, u'auto_disk_config': False, u'os_type': None, u'metadata': {}}, u'instance_type': {u'deleted': False, u'ephemeral_gb': 0, u'updated_at': None, u'disabled': False, u'extra_specs': {}, u'rxtx_factor': 1.0, u'is_public': True, u'flavorid': u'6', u'id': 6, u'root_gb': 4, u'deleted_at': None, u'name': u'm1.micro', u'created_at': u'2015-07-28T07:10:38.000000', u'memory_mb': 512, u'vcpus': 1, u'swap': 0, u'vcpu_weight': 0}, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-28T07:10:51.000000', u'owner': u'4c71ebc3d1254d1e812f0c67502934ab', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1197080576, u'name': u'\\u201cubuntu-tomcat\\u201d', u'checksum': u'067770bb014b98bf088ec353128da9fd', u'created_at': u'2015-07-28T07:10:45.000000', u'disk_format': u'qcow2', u'id': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'num_instances': 1}, {u'instance_type': Flavor(created_at=2015-07-28T07:10:38Z,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='6',id=6,is_public=True,memory_mb=512,name='m1.micro',projects=<?>,root_gb=4,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'retry': {u'num_attempts': 1, u'hosts': [[u'compute', u'compute']]}, u'limits': {u'memory_mb': 193342.5}, u'scheduler_hints': {}})", "project": "nova", "host": "compute", "info.function:kwargs": "{'node': u'compute', 'requested_networks': None, 'limits': {u'memory_mb': 193342.5}, 'block_device_mapping': BlockDeviceMappingList(objects=[BlockDeviceMapping(3)]), 'admin_password': u'85HemEB8v9TY', 'injected_files': [], 'security_groups': [u'default']}"}, "parent_id": "87980c46-080f-4bac-8f1a-7393f3fe3bc5", "trace_id": "392fe62a-1275-46a9-a350-27108e56eee7", "children": []}]}, {"info": {"info.function:name": "oslo_messaging.rpc.server.SchedulerManager.inner", "name": "rpc", "service": "nova-scheduler", "started": 1552, "finished": 1573, "info.function:args": "(<nova.scheduler.manager.SchedulerManager object at 0x7fbd1a41da50>, <nova.context.RequestContext object at 0x7fbd18b1fe90>)", "project": "nova", "host": "controller", "info.function:kwargs": "{u'request_spec': {u'instance_properties': {u'vm_state': u'building', u'pci_requests': {u'instance_uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'requests': []}, u'availability_zone': None, u'terminated_at': None, u'ephemeral_gb': 0, u'instance_type_id': 6, u'user_data': None, u'numa_topology': None, u'cleaned': False, u'vm_mode': None, u'deleted_at': None, u'reservation_id': u'r-viajcjvr', u'id': 3, u'security_groups': [], u'disable_terminate': False, u'root_device_name': None, u'display_name': u'tomcat', u'uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'default_swap_device': None, u'info_cache': {u'instance_uuid': u'84070459-4bb9-4f70-aea1-334ec4d2aa41', u'deleted': False, u'network_info': [], u'created_at': u'2015-07-29T00:38:47.000000', u'deleted_at': None, u'updated_at': None}, u'hostname': u'tomcat', u'launched_on': None, u'display_description': u'tomcat', u'key_data': None, u'deleted': False, u'config_drive': u'', u'power_state': 0, u'default_ephemeral_device': None, u'progress': 0, u'project_id': u'cad2e037f77d4e2b8a2eb37ba21c1f77', u'launched_at': None, u'scheduled_at': None, u'node': None, u'ramdisk_id': u'', u'access_ip_v6': None, u'access_ip_v4': None, u'kernel_id': u'', u'key_name': None, u'updated_at': None, u'host': None, u'root_gb': 4, u'user_id': u'f6ad76a85480463782a174c34da41886', u'system_metadata': {u'image_min_disk': u'4', u'instance_type_memory_mb': 512, u'instance_type_swap': 0, u'instance_type_vcpu_weight': 0, u'instance_type_root_gb': 4, u'instance_type_id': 6, u'instance_type_name': u'm1.micro', u'instance_type_ephemeral_gb': 0, u'instance_type_rxtx_factor': 1.0, u'instance_type_flavorid': u'6', u'instance_type_vcpus': 1, u'image_container_format': u'bare', u'image_min_ram': u'0', u'image_disk_format': u'qcow2', u'image_base_image_ref': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'task_state': u'scheduling', u'shutdown_terminate': False, u'cell_name': None, u'ephemeral_key_uuid': None, u'locked': False, u'name': u'instance-00000003', u'created_at': u'2015-07-29T00:38:47.000000', u'locked_by': None, u'launch_index': 0, u'memory_mb': 512, u'vcpus': 1, u'image_ref': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87', u'architecture': None, u'auto_disk_config': False, u'os_type': None, u'metadata': {}}, u'instance_type': {u'deleted': False, u'ephemeral_gb': 0, u'updated_at': None, u'disabled': False, u'extra_specs': {}, u'rxtx_factor': 1.0, u'is_public': True, u'flavorid': u'6', u'id': 6, u'root_gb': 4, u'deleted_at': None, u'name': u'm1.micro', u'created_at': u'2015-07-28T07:10:38.000000', u'memory_mb': 512, u'vcpus': 1, u'swap': 0, u'vcpu_weight': 0}, u'image': {u'status': u'active', u'deleted': False, u'container_format': u'bare', u'min_ram': 0, u'updated_at': u'2015-07-28T07:10:51.000000', u'owner': u'4c71ebc3d1254d1e812f0c67502934ab', u'min_disk': 0, u'is_public': True, u'deleted_at': None, u'properties': {}, u'size': 1197080576, u'name': u'\\u201cubuntu-tomcat\\u201d', u'checksum': u'067770bb014b98bf088ec353128da9fd', u'created_at': u'2015-07-28T07:10:45.000000', u'disk_format': u'qcow2', u'id': u'61eb6a71-a3b2-44b3-b171-34d1bf6e6b87'}, u'num_instances': 1}, u'filter_properties': {u'instance_type': Flavor(created_at=2015-07-28T07:10:38Z,deleted=False,deleted_at=None,disabled=False,ephemeral_gb=0,extra_specs={},flavorid='6',id=6,is_public=True,memory_mb=512,name='m1.micro',projects=<?>,root_gb=4,rxtx_factor=1.0,swap=0,updated_at=None,vcpu_weight=0,vcpus=1), u'retry': {u'num_attempts': 1, u'hosts': []}, u'scheduler_hints': {}}}"}, "parent_id": "bbca8478-999c-4dcd-9291-c9d01040d0d3", "trace_id": "123ea968-9afa-4a72-be25-5c4c04856ba5", "children": []}]}]}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1631, "project": "nova", "started": 1543, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/cad2e037f77d4e2b8a2eb37ba21c1f77/servers/84070459-4bb9-4f70-aea1-334ec4d2aa41"}, "parent_id": "0a03db4a-cce8-4f33-a6fd-48e497f07bf0", "trace_id": "c874c083-d364-4bd5-aed4-f356f6d929ca", "children": []}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1655, "project": "nova", "started": 1638, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/cad2e037f77d4e2b8a2eb37ba21c1f77/flavors/6"}, "parent_id": "0a03db4a-cce8-4f33-a6fd-48e497f07bf0", "trace_id": "d8e1cc87-d7bd-4a64-884f-59d4c418924f", "children": []}, {"info": {"name": "wsgi", "service": "osapi_compute", "info.request:host_url": "http://10.32.45.201:8774", "info.request:scheme": "http", "finished": 1778, "project": "nova", "started": 1660, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/v2/cad2e037f77d4e2b8a2eb37ba21c1f77/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "0a03db4a-cce8-4f33-a6fd-48e497f07bf0", "trace_id": "c16d54a6-32fb-4216-923a-f82aa1d07108", "children": [{"info": {"name": "wsgi", "service": "api", "info.request:host_url": "http://10.32.45.201:9292", "info.request:scheme": "http", "finished": 1772, "project": "glance", "started": 1670, "host": "0.0.0.0", "info.request:method": "HEAD", "info.request:query": "", "info.request:path": "/v1/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "c16d54a6-32fb-4216-923a-f82aa1d07108", "trace_id": "ebbc54ec-abbc-4462-82f7-dacb7eacdb4e", "children": [{"info": {"name": "wsgi", "service": "registry", "info.request:host_url": "http://0.0.0.0:9191", "info.request:scheme": "http", "finished": 1768, "project": "glance", "started": 1754, "host": "0.0.0.0", "info.request:method": "GET", "info.request:query": "", "info.request:path": "/images/61eb6a71-a3b2-44b3-b171-34d1bf6e6b87"}, "parent_id": "ebbc54ec-abbc-4462-82f7-dacb7eacdb4e", "trace_id": "a0199d69-5065-4183-9892-0bb8eaf9af00", "children": []}]}]}]}
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+
+    <style>
+
+      .trace {
+        min-width: 900px;
+        width: 100%;
+      }
+
+      .trace tr.active-true {
+        background-color: #D9EDF7!important;
+      }
+
+      .trace tr td {
+        width: 14%;
+        white-space: nowrap;
+        padding: 2px;
+        border-right: 1px solid #eee;
+
+      }
+      .trace tr td.details {
+        width: 10%;
+        padding-right: 20px;
+      }
+      .trace.cursor_pointer_on_hover {
+        cursor: pointer;
+      }
+      .trace .level {
+        width: 10%;
+        font-weight: bold;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .duration {
+        width: 25px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #c6eff3;
+        border-radius: 4px;
+        font-size: 10px;
+
+      }
+
+      .duration div{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/ng-template"  id="tree_item_renderer.html">
+
+        <div ng-init="hide_children=false">
+          <table class="trace cursor_pointer_on_hover">
+            <tr class="active-{{hover}}" ng-init="hover=false" ng-mouseenter="hover=true" ng-mouseleave="hover=false">
+              <td class="level" style="padding-left:{{data.level * 5}}px;">
+                <button type="button" class="btn btn-default btn-xs" ng-disabled="data.is_leaf" ng-click="hide_children=!hide_children">
+                  <span class="glyphicon glyphicon-{{ (data.is_leaf) ? 'cloud' : ((hide_children) ? 'plus': 'minus')}}"></span>
+                  {{data.level || 0}}
+                </button>
+              </td>
+              <td ng-click="display(data);" class="text-center">
+               <div class="duration" style="width: {{get_width(data)}}%; margin-left: {{get_started(data)}}%">
+                  <div>{{data.info.finished - data.info.started}} ms</div>
+                </div>
+              </td>
+              <td ng-click="display(data);" class="{{ is_important(data) ? 'bold' : ''}} text-right" > {{data.info.name}} </td>
+              <td ng-click="display(data);"> {{data.info.project  || "n/a"}}</td>
+              <td ng-click="display(data);"> {{data.info.service  || "n/a" }} </td>
+              <td ng-click="display(data);"> {{data.info.host || "n/a"}} </td>
+              <td class="details">
+                <a href="#" ng-click="display(data);"> Details </a>
+              </td>
+            </tr>
+          </table>
+
+
+        <div ng-hide="hide_children">
+          <div ng-repeat="data in data.children" ng-include="'tree_item_renderer.html'"> </div>
+        </div>
+      </div>
+
+
+    </script>
+
+    <script>
+      angular.module("Application", ['ui.bootstrap']);
+
+      function ProfilerCtlr($scope, $modal) {
+
+        var convert_input = function(input, level){
+          level = (level) ? level : 0;
+          input.level = level;
+          input.is_leaf = !input.children.length
+
+          for (var i=0; i < input.children.length; i++)
+            convert_input(input.children[i], level + 1);
+          return input;
+        }
+
+        $scope.get_width = function(data){
+
+          var full_duration = $scope.tree[0].info.finished;
+          var duration = (data.info.finished - data.info.started) * 100.0 / full_duration;
+          return (duration >= 0.5) ? duration : 0.5;
+        }
+
+        $scope.get_started = function(data) {
+          var full_duration = $scope.tree[0].info.finished;
+          return data.info.started * 100.0 / full_duration;
+        }
+
+        $scope.is_important = function(data) {
+          return ["total", "wsgi", "rpc"].indexOf(data.info.name) != -1;
+        }
+
+        $scope.display = function(data){
+          var info = angular.copy(data.info);
+
+          var metadata = {};
+          angular.forEach(info, function(value, key) {
+            var parts = key.split(".");
+            if (parts[0] == "info"){
+
+              if (parts.length != 2){
+                this[key] = value;
+              }
+              else{
+                var group_name = parts[1].split(":");
+                if (group_name.length == 2){
+                  if (!(group_name[0] in this))
+                    this[group_name[0]] = {};
+
+                  this[group_name[0]][group_name[1]] = value;
+                }
+              }
+            };
+          }, metadata);
+
+          info["metadata"] = "<pre>" + JSON.stringify(metadata, "", 4) + "</pre>"
+
+          var trace_data = "<div class='row'>"
+          columns = ["name", "project", "service", "host", "started",
+                     "finished", "host", "metadata"];
+          for (var i = 0; i < columns.length; i++){
+            trace_data += "<div class='col-md-2 text-right text-capitalize'><strong>" + columns[i] + " </strong></div>";
+            trace_data += "<div class='col-md-10 text-left'>" + info[columns[i]] + "</div>";
+          }
+          trace_data += "</div>";
+
+          var output = (
+            '<div class="modal-header"> Trace Point Details </div>' +
+            '<div class="modal-body">' + trace_data + '</div>' +
+            '<div class="modal-footer"> <span class="glyphicon glyphicon-cloud </div>'
+          )
+
+
+          var modal_instance = $modal.open({
+            "template": output,
+            "size": "lg"
+          });
+        }
+
+        $scope.tree = [convert_input(OSProfilerData)];
+
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div ng-controller="ProfilerCtlr">
+      <table>
+
+      </table>
+      <table class="trace">
+        <tr class="bold text-left" style="border-bottom: solid 1px gray">
+          <td class="level">Levels</td>
+          <td>Duration</td>
+          <td class="text-right">Type</td>
+          <td>Project</td>
+          <td>Service</td>
+          <td>Host</td>
+          <td class="details">Details</td>
+        </tr>
+      </table>
+      <div ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></div>
+    </div>
+
+  </body>
+
+</html>
