@@ -4,13 +4,13 @@
       args:
         profile:
         flavor:
-            name: "m1.small"
+            name: "m1.micro"
         image:
-            name: "centos"
+            name: "ubuntu-tomcat"
       runner:
         type: "constant"
-        times: 5
-        concurrency: 5
+        times: 11
+        concurrency: 11
       context:
         users:
           tenants: 1
