@@ -1,4 +1,4 @@
-boot_time;instances;virt_type
+boot_time;instances;virt
 0.67;5;docker
 0.72;5;docker
 0.68;5;docker
