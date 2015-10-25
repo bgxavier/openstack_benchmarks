@@ -1,0 +1,160 @@
+--------------------------------------------------------------------------------
+ Preparing input task
+--------------------------------------------------------------------------------
+
+Input task is:
+{"NovaServers.boot_server":[{"args":{"flavor":{"name":"m1.micro"},"image":{"name":"ubuntu-tomcat"}},"runner":{"type":"constant","times":30,"concurrency":30},"context":{"users":{"tenants":1,"users_per_tenant":1}}}]}
+
+--------------------------------------------------------------------------------
+ Task  a0e70501-6813-42bf-8978-b0d64cc5909f: started
+--------------------------------------------------------------------------------
+
+Benchmarking... This can take a while...
+
+To track task status use:
+
+	rally task status
+	or
+	rally task detailed
+
+Using task: a0e70501-6813-42bf-8978-b0d64cc5909f
+Profiling trace ID: 36a63ce5-625f-46d7-9916-c0afc545d180
+To display trace use next command:
+osprofiler trace show --html 36a63ce5-625f-46d7-9916-c0afc545d180 
+Profiling trace ID: fc747b15-546e-4684-9da3-599621fc6865
+To display trace use next command:
+osprofiler trace show --html fc747b15-546e-4684-9da3-599621fc6865 
+Profiling trace ID: 0352cf1f-ade4-45f0-baa4-ffc80ffd92c9
+To display trace use next command:
+osprofiler trace show --html 0352cf1f-ade4-45f0-baa4-ffc80ffd92c9 
+Profiling trace ID: b3ec949d-ecff-41e8-9c0b-0571012ff89e
+To display trace use next command:
+osprofiler trace show --html b3ec949d-ecff-41e8-9c0b-0571012ff89e 
+Profiling trace ID: 6311d81b-bbed-437a-8d8c-2752e1f19012
+To display trace use next command:
+osprofiler trace show --html 6311d81b-bbed-437a-8d8c-2752e1f19012 
+Profiling trace ID: 2dbaf7dc-3a11-40d9-bb1e-1d9cd642c51f
+To display trace use next command:
+osprofiler trace show --html 2dbaf7dc-3a11-40d9-bb1e-1d9cd642c51f 
+Profiling trace ID: 58d583c7-cda0-4f68-986a-ccc378d019e7
+To display trace use next command:
+osprofiler trace show --html 58d583c7-cda0-4f68-986a-ccc378d019e7 
+Profiling trace ID: 287b078d-954b-44e3-9a59-617aa8c09123
+To display trace use next command:
+osprofiler trace show --html 287b078d-954b-44e3-9a59-617aa8c09123 
+Profiling trace ID: 0baffed5-a3ab-4af0-b94d-7b3b818887cc
+To display trace use next command:
+osprofiler trace show --html 0baffed5-a3ab-4af0-b94d-7b3b818887cc 
+Profiling trace ID: e682a5c8-e4ca-403f-b4ea-d0917fc4a2ca
+To display trace use next command:
+osprofiler trace show --html e682a5c8-e4ca-403f-b4ea-d0917fc4a2ca 
+Profiling trace ID: 7373c501-6b2a-45a9-a89c-c7d958723d5c
+To display trace use next command:
+osprofiler trace show --html 7373c501-6b2a-45a9-a89c-c7d958723d5c 
+Profiling trace ID: 1e809619-834f-484e-87d4-fd7fd6a3b845
+To display trace use next command:
+osprofiler trace show --html 1e809619-834f-484e-87d4-fd7fd6a3b845 
+Profiling trace ID: a8203c8f-a8f8-4606-aa7c-a71cd978bf4f
+To display trace use next command:
+osprofiler trace show --html a8203c8f-a8f8-4606-aa7c-a71cd978bf4f 
+Profiling trace ID: 3904af3a-116e-4f93-8fac-3cb651c865dc
+To display trace use next command:
+osprofiler trace show --html 3904af3a-116e-4f93-8fac-3cb651c865dc 
+Profiling trace ID: 43a953bb-1226-484c-b6a1-84dc06e83387
+To display trace use next command:
+osprofiler trace show --html 43a953bb-1226-484c-b6a1-84dc06e83387 
+Profiling trace ID: fd2a3634-9c47-4f0a-899b-8bd8d4479b61
+To display trace use next command:
+osprofiler trace show --html fd2a3634-9c47-4f0a-899b-8bd8d4479b61 
+Profiling trace ID: 69171deb-36d2-4420-a4ce-25497111076f
+To display trace use next command:
+osprofiler trace show --html 69171deb-36d2-4420-a4ce-25497111076f 
+Profiling trace ID: ff42ac9e-dd0e-4cb0-aec6-d3de83ca24b8
+To display trace use next command:
+osprofiler trace show --html ff42ac9e-dd0e-4cb0-aec6-d3de83ca24b8 
+Profiling trace ID: 23d7c57d-3309-4ac8-960c-b7bf4a7e02e4
+To display trace use next command:
+osprofiler trace show --html 23d7c57d-3309-4ac8-960c-b7bf4a7e02e4 
+Profiling trace ID: 4cdc3008-a86a-4419-baba-11088c523344
+To display trace use next command:
+osprofiler trace show --html 4cdc3008-a86a-4419-baba-11088c523344 
+Profiling trace ID: 041a2765-398e-464a-bead-ad9d45c3109a
+To display trace use next command:
+osprofiler trace show --html 041a2765-398e-464a-bead-ad9d45c3109a 
+Profiling trace ID: e7056bf0-e577-41ec-93ef-9a30b7147317
+To display trace use next command:
+osprofiler trace show --html e7056bf0-e577-41ec-93ef-9a30b7147317 
+Profiling trace ID: e987b6a5-eb9b-4c82-8f05-d1830c02fd5e
+To display trace use next command:
+osprofiler trace show --html e987b6a5-eb9b-4c82-8f05-d1830c02fd5e 
+Profiling trace ID: ca50d39f-b022-42a9-ba5d-5b9276f0ed91
+To display trace use next command:
+osprofiler trace show --html ca50d39f-b022-42a9-ba5d-5b9276f0ed91 
+Profiling trace ID: 725053b7-4634-4725-8c44-6a4d65167be2
+To display trace use next command:
+osprofiler trace show --html 725053b7-4634-4725-8c44-6a4d65167be2 
+Profiling trace ID: db31fb67-47e7-4632-927a-7637e1c47b22
+To display trace use next command:
+osprofiler trace show --html db31fb67-47e7-4632-927a-7637e1c47b22 
+Profiling trace ID: c41aa2ce-1793-43d8-8a7b-4bea565447d9
+To display trace use next command:
+osprofiler trace show --html c41aa2ce-1793-43d8-8a7b-4bea565447d9 
+Profiling trace ID: 023bb965-2d49-4c6f-a0a7-2958e4b58855
+To display trace use next command:
+osprofiler trace show --html 023bb965-2d49-4c6f-a0a7-2958e4b58855 
+Profiling trace ID: 87e7e1de-8480-4295-8674-b395fdaf4787
+To display trace use next command:
+osprofiler trace show --html 87e7e1de-8480-4295-8674-b395fdaf4787 
+Profiling trace ID: d71c3205-5d20-4d91-b2fd-fee58794e2d8
+To display trace use next command:
+osprofiler trace show --html d71c3205-5d20-4d91-b2fd-fee58794e2d8 
+
+--------------------------------------------------------------------------------
+Task a0e70501-6813-42bf-8978-b0d64cc5909f: finished
+--------------------------------------------------------------------------------
+
+test scenario NovaServers.boot_server
+args position 0
+args values:
+{
+  "runner": {
+    "type": "constant", 
+    "concurrency": 30, 
+    "times": 30
+  }, 
+  "args": {
+    "flavor": {
+      "name": "m1.micro"
+    }, 
+    "image": {
+      "name": "ubuntu-tomcat"
+    }
+  }, 
+  "context": {
+    "users": {
+      "project_domain": "default", 
+      "users_per_tenant": 1, 
+      "tenants": 1, 
+      "resource_management_workers": 30, 
+      "user_domain": "default"
+    }
+  }
+}
++-----------------------------------------------------------------------------------------+
+|                                  Response Times (sec)                                   |
++------------------+--------+--------+--------+--------+--------+-------+---------+-------+
+| action           | min    | median | 90%ile | 95%ile | max    | avg   | success | count |
++------------------+--------+--------+--------+--------+--------+-------+---------+-------+
+| nova.boot_server | 43.615 | 47.104 | 48.013 | 48.357 | 48.649 | 47.13 | 100.0%  | 30    |
+| total            | 43.615 | 47.104 | 48.013 | 48.357 | 48.649 | 47.13 | 100.0%  | 30    |
++------------------+--------+--------+--------+--------+--------+-------+---------+-------+
+Load duration: 48.6637120247
+Full duration: 85.1784851551
+
+HINTS:
+* To plot HTML graphics with this data, run:
+	rally task report a0e70501-6813-42bf-8978-b0d64cc5909f --out output.html
+
+* To get raw JSON output of task results, run:
+	rally task results a0e70501-6813-42bf-8978-b0d64cc5909f
+
