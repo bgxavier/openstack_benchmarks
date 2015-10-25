@@ -52,3 +52,6 @@ total_time;spawn_time;image_time;instance_time;concurrent_instances
 47356;27527;8675;10754;30
 47642;25670;6511;10742;30
 48493;29889;11463;10710;30
+Load Duration: 5.47160387039
+total_time;spawn_time;image_time;instance_time;concurrent_instances
+5323;1900;335;1047;1
