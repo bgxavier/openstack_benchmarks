@@ -55,3 +55,24 @@ total_time;spawn_time;image_time;instance_time;concurrent_instances
 Load Duration: 5.47160387039
 total_time;spawn_time;image_time;instance_time;concurrent_instances
 5323;1900;335;1047;1
+Load Duration: 5.37926602364
+total_time;spawn_time;disk_info_time;get_xml_time;image_time;instance_time;concurrent_instances
+5233;1900;;438;317;1072;1
+Load Duration: 22.9252579212
+total_time;spawn_time;disk_info_time;get_xml_time;image_time;instance_time;concurrent_instances
+22768;19837;-;432;18207;1123;1
+Load Duration: 22.5142009258
+total_time;spawn_time;disk_info_time;get_xml_time;image_time;instance_time;concurrent_instances
+22272;19245;5;425;17791;956;1
+Load Duration: 31.3532109261
+total_time;spawn_time;disk_info_time;get_xml_time;image_time;instance_time;concurrent_instances
+30129;23381;16;3404;15109;4411;10
+30210;24686;9;3308;16409;4648;10
+30010;20895;114;3074;13226;3981;10
+30128;20761;31;3167;12675;4176;10
+30253;21079;136;3505;12142;4548;10
+30494;23423;15;3135;15328;4412;10
+30618;20340;25;3057;13037;3872;10
+30876;22724;128;3344;12568;4274;10
+31025;20505;30;3125;12815;3977;10
+30956;20401;25;3102;12848;4022;10

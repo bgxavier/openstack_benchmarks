@@ -3,10 +3,10 @@
 --------------------------------------------------------------------------------
 
 Input task is:
-{"NovaServers.boot_server":[{"args":{"flavor":{"name":"m1.micro"},"image":{"name":"ubuntu-tomcat"}},"runner":{"type":"constant","times":1,"concurrency":1},"context":{"users":{"tenants":1,"users_per_tenant":1}}}]}
+{"NovaServers.boot_server":[{"args":{"flavor":{"name":"m1.micro"},"image":{"name":"ubuntu-tomcat"}},"runner":{"type":"constant","times":10,"concurrency":10},"context":{"users":{"tenants":1,"users_per_tenant":1}}}]}
 
 --------------------------------------------------------------------------------
- Task  2044b0a2-5d93-42d0-96b0-e166b75d4e4a: started
+ Task  37b76ed5-28d2-4661-a6b7-0319edb45843: started
 --------------------------------------------------------------------------------
 
 Benchmarking... This can take a while...
@@ -17,13 +17,40 @@ To track task status use:
 	or
 	rally task detailed
 
-Using task: 2044b0a2-5d93-42d0-96b0-e166b75d4e4a
-Profiling trace ID: 0505f301-7688-4383-a633-2ea781b222f8
+Using task: 37b76ed5-28d2-4661-a6b7-0319edb45843
+Profiling trace ID: 51c53a9d-daf0-4dde-a9e8-20232b694fbf
 To display trace use next command:
-osprofiler trace show --html 0505f301-7688-4383-a633-2ea781b222f8 
+osprofiler trace show --html 51c53a9d-daf0-4dde-a9e8-20232b694fbf 
+Profiling trace ID: 01901255-757a-47b6-939e-e258d176192b
+To display trace use next command:
+osprofiler trace show --html 01901255-757a-47b6-939e-e258d176192b 
+Profiling trace ID: 03576dfb-2d5b-496f-a903-33da62195333
+To display trace use next command:
+osprofiler trace show --html 03576dfb-2d5b-496f-a903-33da62195333 
+Profiling trace ID: 43b340e3-766b-4f34-a8a0-01883e533799
+To display trace use next command:
+osprofiler trace show --html 43b340e3-766b-4f34-a8a0-01883e533799 
+Profiling trace ID: f029e557-2f3f-4eed-bedf-1640158d80c0
+To display trace use next command:
+osprofiler trace show --html f029e557-2f3f-4eed-bedf-1640158d80c0 
+Profiling trace ID: 14718ad5-d569-41d7-908c-ba1b89122312
+To display trace use next command:
+osprofiler trace show --html 14718ad5-d569-41d7-908c-ba1b89122312 
+Profiling trace ID: 1afc9fce-ff06-4cf6-9b57-8b44f9493811
+To display trace use next command:
+osprofiler trace show --html 1afc9fce-ff06-4cf6-9b57-8b44f9493811 
+Profiling trace ID: 8ba2d11c-78da-4add-a6bf-014022422730
+To display trace use next command:
+osprofiler trace show --html 8ba2d11c-78da-4add-a6bf-014022422730 
+Profiling trace ID: 26b87c1d-ee60-4a7f-8989-9cf32d8c67a9
+To display trace use next command:
+osprofiler trace show --html 26b87c1d-ee60-4a7f-8989-9cf32d8c67a9 
+Profiling trace ID: e910daf4-6438-45a7-a6fa-90956c156221
+To display trace use next command:
+osprofiler trace show --html e910daf4-6438-45a7-a6fa-90956c156221 
 
 --------------------------------------------------------------------------------
-Task 2044b0a2-5d93-42d0-96b0-e166b75d4e4a: finished
+Task 37b76ed5-28d2-4661-a6b7-0319edb45843: finished
 --------------------------------------------------------------------------------
 
 test scenario NovaServers.boot_server
@@ -32,8 +59,8 @@ args values:
 {
   "runner": {
     "type": "constant", 
-    "concurrency": 1, 
-    "times": 1
+    "concurrency": 10, 
+    "times": 10
   }, 
   "args": {
     "flavor": {
@@ -53,21 +80,21 @@ args values:
     }
   }
 }
-+---------------------------------------------------------------------------------------+
-|                                 Response Times (sec)                                  |
-+------------------+-------+--------+--------+--------+-------+-------+---------+-------+
-| action           | min   | median | 90%ile | 95%ile | max   | avg   | success | count |
-+------------------+-------+--------+--------+--------+-------+-------+---------+-------+
-| nova.boot_server | 5.453 | 5.453  | 5.453  | 5.453  | 5.453 | 5.453 | 100.0%  | 1     |
-| total            | 5.453 | 5.453  | 5.453  | 5.453  | 5.453 | 5.453 | 100.0%  | 1     |
-+------------------+-------+--------+--------+--------+-------+-------+---------+-------+
-Load duration: 5.47160387039
-Full duration: 12.6970019341
++------------------------------------------------------------------------------------------+
+|                                   Response Times (sec)                                   |
++------------------+--------+--------+--------+--------+--------+--------+---------+-------+
+| action           | min    | median | 90%ile | 95%ile | max    | avg    | success | count |
++------------------+--------+--------+--------+--------+--------+--------+---------+-------+
+| nova.boot_server | 30.292 | 30.596 | 31.205 | 31.267 | 31.329 | 30.728 | 100.0%  | 10    |
+| total            | 30.292 | 30.596 | 31.205 | 31.267 | 31.329 | 30.728 | 100.0%  | 10    |
++------------------+--------+--------+--------+--------+--------+--------+---------+-------+
+Load duration: 31.3532109261
+Full duration: 44.5690000057
 
 HINTS:
 * To plot HTML graphics with this data, run:
-	rally task report 2044b0a2-5d93-42d0-96b0-e166b75d4e4a --out output.html
+	rally task report 37b76ed5-28d2-4661-a6b7-0319edb45843 --out output.html
 
 * To get raw JSON output of task results, run:
-	rally task results 2044b0a2-5d93-42d0-96b0-e166b75d4e4a
+	rally task results 37b76ed5-28d2-4661-a6b7-0319edb45843
 

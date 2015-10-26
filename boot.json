@@ -1,1 +1,1 @@
-{"NovaServers.boot_server":[{"args":{"flavor":{"name":"m1.micro"},"image":{"name":"ubuntu-tomcat"}},"runner":{"type":"constant","times":1,"concurrency":1},"context":{"users":{"tenants":1,"users_per_tenant":1}}}]}
+{"NovaServers.boot_server":[{"args":{"flavor":{"name":"m1.micro"},"image":{"name":"ubuntu-tomcat"}},"runner":{"type":"constant","times":10,"concurrency":10},"context":{"users":{"tenants":1,"users_per_tenant":1}}}]}
