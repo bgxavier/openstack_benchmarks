@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------------
+ Preparing input task
+--------------------------------------------------------------------------------
+
+Input task is:
+{"NovaServers.boot_server":[{"args":{"flavor":{"name":"m1.micro"},"image":{"name":"tomcat"}},"runner":{"type":"constant","times":1,"concurrency":1},"context":{"users":{"tenants":1,"users_per_tenant":1}}}]}
+
+--------------------------------------------------------------------------------
+ Task  973504ea-8e55-48eb-98f1-dacd97c4aaa1: started
+--------------------------------------------------------------------------------
+
+Benchmarking... This can take a while...
+
+To track task status use:
+
+	rally task status
+	or
+	rally task detailed
+
+Using task: 973504ea-8e55-48eb-98f1-dacd97c4aaa1
+Profiling trace ID: 28fa5ddb-9289-42cb-9421-ed67c82fb37b
+To display trace use next command:
+osprofiler trace show --html 28fa5ddb-9289-42cb-9421-ed67c82fb37b 
+
+--------------------------------------------------------------------------------
+Task 973504ea-8e55-48eb-98f1-dacd97c4aaa1: finished
+--------------------------------------------------------------------------------
+
+test scenario NovaServers.boot_server
+args position 0
+args values:
+{
+  "runner": {
+    "type": "constant", 
+    "concurrency": 1, 
+    "times": 1
+  }, 
+  "args": {
+    "flavor": {
+      "name": "m1.micro"
+    }, 
+    "image": {
+      "name": "tomcat"
+    }
+  }, 
+  "context": {
+    "users": {
+      "project_domain": "default", 
+      "users_per_tenant": 1, 
+      "tenants": 1, 
+      "resource_management_workers": 30, 
+      "user_domain": "default"
+    }
+  }
+}
++------------------------------------------------------------------------------------------+
+|                                   Response Times (sec)                                   |
++------------------+--------+--------+--------+--------+--------+--------+---------+-------+
+| action           | min    | median | 90%ile | 95%ile | max    | avg    | success | count |
++------------------+--------+--------+--------+--------+--------+--------+---------+-------+
+| nova.boot_server | 11.045 | 11.045 | 11.045 | 11.045 | 11.045 | 11.045 | 100.0%  | 1     |
+| total            | 11.046 | 11.046 | 11.046 | 11.046 | 11.046 | 11.046 | 100.0%  | 1     |
++------------------+--------+--------+--------+--------+--------+--------+---------+-------+
+Load duration: 11.0604121685
+Full duration: 17.1908152103
+
+HINTS:
+* To plot HTML graphics with this data, run:
+	rally task report 973504ea-8e55-48eb-98f1-dacd97c4aaa1 --out output.html
+
+* To get raw JSON output of task results, run:
+	rally task results 973504ea-8e55-48eb-98f1-dacd97c4aaa1
+
